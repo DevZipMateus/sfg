@@ -1,13 +1,58 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from 'react';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import Hero from '@/components/sections/Hero';
+import About from '@/components/sections/About';
+import Services from '@/components/sections/Services';
+import Blog from '@/components/sections/Blog';
+import Contact from '@/components/sections/Contact';
+import FloatingButton from '@/components/ui/FloatingButton';
+import { motion } from 'framer-motion';
 
 const Index = () => {
+  useEffect(() => {
+    // Smooth scroll function for anchor links
+    const handleAnchorLinkClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (target.tagName === 'A' && target.getAttribute('href')?.startsWith('#')) {
+        e.preventDefault();
+        const href = target.getAttribute('href');
+        if (href) {
+          const element = document.querySelector(href);
+          if (element) {
+            window.scrollTo({
+              top: element.getBoundingClientRect().top + window.scrollY - 80,
+              behavior: 'smooth',
+            });
+          }
+        }
+      }
+    };
+
+    document.addEventListener('click', handleAnchorLinkClick);
+    return () => {
+      document.removeEventListener('click', handleAnchorLinkClick);
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="overflow-hidden"
+    >
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Blog />
+        <Contact />
+      </main>
+      <FloatingButton />
+      <Footer />
+    </motion.div>
   );
 };
 
