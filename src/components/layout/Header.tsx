@@ -19,12 +19,37 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Início', href: '#' },
+    { name: 'Início', href: '#home' }, // Updated to #home
     { name: 'Sobre', href: '#about' },
     { name: 'Serviços', href: '#services' },
     { name: 'Blog', href: '#blog' },
     { name: 'Contato', href: '#contact' },
   ];
+
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    
+    // Handle "Início" link specially to scroll to top
+    if (href === '#home') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        window.scrollTo({
+          top: element.getBoundingClientRect().top + window.scrollY - 100,
+          behavior: 'smooth',
+        });
+      }
+    }
+    
+    // Close mobile menu if open
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+  };
 
   return (
     <header
@@ -50,16 +75,7 @@ const Header = () => {
                 key={link.name}
                 href={link.href}
                 className="nav-link"
-                onClick={(e) => {
-                  e.preventDefault();
-                  const element = document.querySelector(link.href);
-                  if (element) {
-                    window.scrollTo({
-                      top: element.getBoundingClientRect().top + window.scrollY - 100,
-                      behavior: 'smooth',
-                    });
-                  }
-                }}
+                onClick={(e) => scrollToSection(e, link.href)}
               >
                 {link.name}
               </a>
@@ -100,17 +116,7 @@ const Header = () => {
               key={link.name}
               href={link.href}
               className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-500 hover:bg-slate-50"
-              onClick={(e) => {
-                e.preventDefault();
-                setIsMobileMenuOpen(false);
-                const element = document.querySelector(link.href);
-                if (element) {
-                  window.scrollTo({
-                    top: element.getBoundingClientRect().top + window.scrollY - 100,
-                    behavior: 'smooth',
-                  });
-                }
-              }}
+              onClick={(e) => scrollToSection(e, link.href)}
             >
               {link.name}
             </a>
@@ -119,7 +125,7 @@ const Header = () => {
             <a
               href="#contact"
               className="block w-full text-center px-4 py-3 font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={(e) => scrollToSection(e, '#contact')}
             >
               Agende uma Consulta
             </a>

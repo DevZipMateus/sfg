@@ -3,23 +3,19 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 const FloatingButton = () => {
-  const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      
-      if (currentScrollY > lastScrollY && currentScrollY > 300) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-      
-      setLastScrollY(currentScrollY);
+      // Show the button when scrolled past the hero section (approx. screen height)
+      const heroHeight = window.innerHeight;
+      setIsVisible(window.scrollY > heroHeight * 0.7);
     };
 
+    // Initial check on mount
+    handleScroll();
+    
     window.addEventListener('scroll', handleScroll, { passive: true });
     
     // Add attention-grabbing animation interval
@@ -32,7 +28,7 @@ const FloatingButton = () => {
       window.removeEventListener('scroll', handleScroll);
       clearInterval(animationInterval);
     };
-  }, [lastScrollY]);
+  }, []);
 
   return (
     <a
