@@ -74,7 +74,7 @@ const Hero = () => {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+          className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -88,7 +88,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center"
+          className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center"
           initial={{ opacity: 0 }}
           animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
