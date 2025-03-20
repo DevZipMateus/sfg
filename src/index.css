@@ -7,16 +7,21 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    /* 60-30-10 Color Rule */
+    --primary-color: 210 40% 98%; /* Slate 50 - 60% */
+    --secondary-color: 216 100% 50%; /* Blue 500 - 30% */
+    --accent-color: 222 47% 11%; /* Slate 900 - 10% */
+    
+    --background: var(--primary-color);
+    --foreground: var(--accent-color);
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: var(--accent-color);
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: var(--accent-color);
 
-    --primary: 216 100% 50%;
+    --primary: var(--secondary-color);
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -102,8 +107,9 @@
 }
 
 @layer components {
+  /* Reduced spacing in section containers */
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16;
   }
   
   .section-title {
@@ -111,7 +117,7 @@
   }
   
   .section-subtitle {
-    @apply text-lg md:text-xl text-slate-600 max-w-3xl mb-12;
+    @apply text-lg md:text-xl text-slate-600 max-w-3xl mb-8;
   }
   
   .btn-primary {
@@ -141,5 +147,14 @@
   
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-blue;
+  }
+  
+  /* WhatsApp floating button animations */
+  .whatsapp-btn-pulse {
+    @apply animate-pulse;
+  }
+  
+  .whatsapp-btn-bounce {
+    @apply animate-bounce;
   }
 }
