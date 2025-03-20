@@ -106,52 +106,7 @@ const Contact = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-          <motion.div className="lg:col-span-3 bg-white rounded-xl shadow-subtle p-6 sm:p-8" initial={{
-          opacity: 0,
-          x: -20
-        }} animate={isVisible ? {
-          opacity: 1,
-          x: 0
-        } : {
-          opacity: 0,
-          x: -20
-        }} transition={{
-          duration: 0.7,
-          delay: 0.2
-        }}>
-            <h3 className="text-2xl font-semibold mb-6">Envie uma Mensagem</h3>
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium text-slate-700">
-                    Nome Completo *
-                  </label>
-                  <Input id="name" name="name" value={formData.name} onChange={handleChange} required className="w-full" placeholder="Seu nome" />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium text-slate-700">
-                    Email *
-                  </label>
-                  <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required className="w-full" placeholder="seu@email.com" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="phone" className="text-sm font-medium text-slate-700">
-                  Telefone
-                </label>
-                <Input id="phone" name="phone" value={formData.phone} onChange={handleChange} className="w-full" placeholder="(00) 00000-0000" />
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium text-slate-700">
-                  Mensagem *
-                </label>
-                <Textarea id="message" name="message" value={formData.message} onChange={handleChange} required className="min-h-32" placeholder="Como podemos ajudar?" />
-              </div>
-              <Button type="submit" disabled={isSubmitting} className="w-full sm:w-auto btn-primary">
-                {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
-              </Button>
-            </form>
-          </motion.div>
+          
 
           <motion.div className="lg:col-span-2" initial={{
           opacity: 0,
