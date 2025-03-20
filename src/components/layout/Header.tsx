@@ -19,10 +19,9 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Início', href: '#home' }, // Updated to #home
+    { name: 'Início', href: '#home' },
     { name: 'Sobre', href: '#about' },
     { name: 'Serviços', href: '#services' },
-    { name: 'Blog', href: '#blog' },
     { name: 'Contato', href: '#contact' },
   ];
 
