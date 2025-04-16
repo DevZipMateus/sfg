@@ -53,40 +53,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				sfg: {
+					red: '#ea384c',
+					black: '#000000',
+					white: '#ffffff',
 				},
-				blue: {
-					50: '#E6F0FD',
-					100: '#CCE2FC',
-					200: '#99C5F9',
-					300: '#66A9F6',
-					400: '#338CF3',
-					500: '#0070F0',
-					600: '#005AC0',
-					700: '#004390',
-					800: '#002D60',
-					900: '#001630',
-				},
-				slate: {
-					50: '#f8fafc',
-					100: '#f1f5f9',
-					200: '#e2e8f0',
-					300: '#cbd5e1',
-					400: '#94a3b8',
-					500: '#64748b',
-					600: '#475569',
-					700: '#334155',
-					800: '#1e293b',
-					900: '#0f172a',
-				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -118,21 +89,13 @@ export default {
 					'0%': { transform: 'translateY(20px)', opacity: '0' },
 					'100%': { transform: 'translateY(0)', opacity: '1' }
 				},
-				slideDown: {
-					'0%': { transform: 'translateY(-20px)', opacity: '0' },
-					'100%': { transform: 'translateY(0)', opacity: '1' }
-				},
-				slideInLeft: {
-					'0%': { transform: 'translateX(-20px)', opacity: '0' },
-					'100%': { transform: 'translateX(0)', opacity: '1' }
-				},
-				slideInRight: {
-					'0%': { transform: 'translateX(20px)', opacity: '0' },
-					'100%': { transform: 'translateX(0)', opacity: '1' }
-				},
 				pulse: {
 					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0.7' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
@@ -140,26 +103,17 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fadeIn 0.7s ease-in-out',
 				'slide-up': 'slideUp 0.7s ease-in-out',
-				'slide-down': 'slideDown 0.7s ease-in-out',
-				'slide-in-left': 'slideInLeft 0.7s ease-in-out',
-				'slide-in-right': 'slideInRight 0.7s ease-in-out',
-				'pulse-slow': 'pulse 3s ease-in-out infinite'
+				'pulse-slow': 'pulse 3s ease-in-out infinite',
+				'float': 'float 3s ease-in-out infinite'
 			},
-			transitionTimingFunction: {
-				'bounce-ease': 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+			boxShadow: {
+				'soft': '0 4px 15px rgba(0, 0, 0, 0.08)',
+				'medium': '0 6px 20px rgba(0, 0, 0, 0.12)'
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 				display: ['Montserrat', 'sans-serif']
 			},
-			boxShadow: {
-				'subtle': '0 2px 10px rgba(0, 0, 0, 0.05)',
-				'elevation': '0 5px 30px rgba(0, 0, 0, 0.08)'
-			},
-			backgroundImage: {
-				'hero-pattern': "url('/images/hero-bg.jpg')",
-				'gradient-blue': 'linear-gradient(45deg, #0070F0 0%, #338CF3 100%)',
-			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

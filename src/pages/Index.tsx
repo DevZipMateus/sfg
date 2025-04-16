@@ -1,19 +1,23 @@
 
 import { useEffect } from 'react';
-import { useIsMobile } from '@/hooks/use-mobile'; 
+import { motion } from 'framer-motion';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/sections/Hero';
-import About from '@/components/sections/About';
-import Services from '@/components/sections/Services';
-import Contact from '@/components/sections/Contact';
+import Correias from '@/components/sections/Correias';
+import Mangueiras from '@/components/sections/Mangueiras';
+import Acessorios from '@/components/sections/Acessorios';
+import QuemSomos from '@/components/sections/QuemSomos';
+import Depoimentos from '@/components/sections/Depoimentos';
+import Contato from '@/components/sections/Contato';
 import FloatingButton from '@/components/ui/FloatingButton';
-import { motion } from 'framer-motion';
+import { Toaster } from "@/components/ui/sonner";
 
 const Index = () => {
-  const isMobile = useIsMobile();
-
   useEffect(() => {
+    // Definindo título e descrição para SEO
+    document.title = "SFG Correias e Mangueiras | Tudo o que procura, num só fornecedor";
+    
     // Smooth scroll function for anchor links
     const handleAnchorLinkClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
@@ -21,13 +25,20 @@ const Index = () => {
         e.preventDefault();
         const href = target.getAttribute('href');
         if (href) {
-          const element = document.querySelector(href);
-          if (element) {
-            const offset = isMobile ? 60 : 80; // Smaller offset for mobile
+          if (href === '#home') {
             window.scrollTo({
-              top: element.getBoundingClientRect().top + window.scrollY - offset,
+              top: 0,
               behavior: 'smooth',
             });
+          } else {
+            const element = document.querySelector(href);
+            if (element) {
+              const offset = 80; // Ajuste conforme o tamanho do header
+              window.scrollTo({
+                top: element.getBoundingClientRect().top + window.scrollY - offset,
+                behavior: 'smooth',
+              });
+            }
           }
         }
       }
@@ -37,7 +48,7 @@ const Index = () => {
     return () => {
       document.removeEventListener('click', handleAnchorLinkClick);
     };
-  }, [isMobile]);
+  }, []);
 
   return (
     <motion.div
@@ -45,12 +56,16 @@ const Index = () => {
       animate={{ opacity: 1 }}
       className="overflow-hidden"
     >
+      <Toaster position="top-center" />
       <Header />
-      <main className="space-y-0"> {/* Removed spacing between sections */}
+      <main>
         <Hero />
-        <About />
-        <Services />
-        <Contact />
+        <Correias />
+        <Mangueiras />
+        <Acessorios />
+        <QuemSomos />
+        <Depoimentos />
+        <Contato />
       </main>
       <FloatingButton />
       <Footer />
