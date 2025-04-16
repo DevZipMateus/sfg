@@ -1,7 +1,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Clock, Tool, Truck } from 'lucide-react';
+import { Clock, Wrench, Truck } from 'lucide-react';
 
 const QuemSomos = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +28,7 @@ const QuemSomos = () => {
 
   const diferenciais = [
     {
-      icon: <Tool className="h-10 w-10" />,
+      icon: <Wrench className="h-10 w-10" />,
       title: 'Atendimento Técnico',
       description: 'Equipe treinada para oferecer o melhor suporte e soluções técnicas.',
     },
