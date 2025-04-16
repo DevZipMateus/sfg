@@ -1,21 +1,11 @@
 
-import { useState, useRef, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { useToast } from '@/hooks/use-toast';
-import { Mail, Phone, MapPin, Check, Loader2 } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contato = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formValues, setFormValues] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
-
   const sectionRef = useRef<HTMLDivElement>(null);
-  const { toast } = useToast();
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
@@ -36,33 +26,6 @@ const Contato = () => {
     };
   }, []);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormValues((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulating form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast({
-        title: "Mensagem enviada!",
-        description: "Agradecemos seu contato. Responderemos em breve.",
-      });
-
-      // Reset form
-      setFormValues({
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
-      });
-    }, 1500);
-  };
-
   return (
     <section ref={sectionRef} id="contato" className="py-16 bg-white">
       <div className="container-section">
@@ -79,100 +42,6 @@ const Contato = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <motion.div 
-            className="order-2 lg:order-1"
-            initial={{ opacity: 0, x: -20 }}
-            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-          >
-            <form onSubmit={handleSubmit} className="card p-6">
-              <div className="mb-4">
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                  Nome
-                </label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  required
-                  value={formValues.name}
-                  onChange={handleChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sfg-red"
-                  placeholder="Seu nome"
-                />
-              </div>
-              
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                  E-mail
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  value={formValues.email}
-                  onChange={handleChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sfg-red"
-                  placeholder="seu.email@exemplo.com"
-                />
-              </div>
-              
-              <div className="mb-4">
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                  Telefone
-                </label>
-                <input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  value={formValues.phone}
-                  onChange={handleChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sfg-red"
-                  placeholder="(00) 00000-0000"
-                />
-              </div>
-              
-              <div className="mb-4">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Mensagem
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  required
-                  value={formValues.message}
-                  onChange={handleChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sfg-red resize-none"
-                  placeholder="Como podemos ajudar?"
-                ></textarea>
-              </div>
-              
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-sfg-red hover:bg-red-600 text-white font-medium py-2 px-4 rounded-md transition-colors flex justify-center items-center"
-              >
-                {isSubmitting ? (
-                  <>
-                    <Loader2 className="animate-spin mr-2 h-4 w-4" />
-                    Enviando...
-                  </>
-                ) : (
-                  <>
-                    <Check className="mr-2 h-4 w-4" />
-                    Enviar Mensagem
-                  </>
-                )}
-              </button>
-              
-              <div className="mt-3 text-xs text-center text-gray-500">
-                Ao enviar, você concorda em receber respostas por e-mail
-              </div>
-            </form>
-          </motion.div>
-          
           <motion.div 
             className="order-1 lg:order-2"
             initial={{ opacity: 0, x: 20 }}
@@ -238,3 +107,4 @@ const Contato = () => {
 };
 
 export default Contato;
+
