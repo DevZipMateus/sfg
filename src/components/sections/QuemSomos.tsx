@@ -1,7 +1,6 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Clock, Wrench, Truck } from 'lucide-react';
+import { Wrench, Truck, Clock } from 'lucide-react';
 
 const QuemSomos = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -66,16 +65,17 @@ const QuemSomos = () => {
           >
             <h3 className="text-2xl font-bold mb-4">SFG Correias e Mangueiras</h3>
             <p className="text-gray-600 mb-4">
-              Somos uma empresa especializada em fornecer soluções completas em correias, mangueiras e acessórios 
-              industriais. Atendemos com excelência diversos segmentos, desde a indústria até o comércio em geral.
+              Em atividade desde 2007, a SFG Correias e Mangueiras se consolidou como especialista e fornecedora 
+              de correias industriais, polias, mangueiras industriais e mangueiras para todo país. Com vasta linha 
+              de produtos, somos distribuidores autorizados.
             </p>
             <p className="text-gray-600 mb-4">
-              Nosso compromisso é oferecer produtos de qualidade, com atendimento personalizado e preços justos, 
-              contribuindo para o sucesso e a eficiência das operações de nossos clientes.
+              Contando com uma equipe especializada, atuamos não apenas no fornecimento de correias industriais, 
+              polias e mangueiras industriais, mas também no auxílio aos nossos clientes em decisões técnicas, 
+              possibilitando economia em insumos e manutenção.
             </p>
-            <p className="text-gray-600">
-              Contamos com uma equipe qualificada e um amplo estoque para atender às suas necessidades com agilidade 
-              e precisão.
+            <p className="text-sfg-red italic font-semibold">
+              "Tudo o que procura, num só fornecedor: atendimento, qualidade, preço e compromisso."
             </p>
           </motion.div>
 
