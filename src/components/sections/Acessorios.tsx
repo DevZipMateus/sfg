@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   Wrench, Link, Paperclip, Eye, 
-  Disc, CupSoda, SquareStack, Grid2X2, Settings 
+  Disc, CupSoda, SquareStack, Grid2X2, Settings, Plug 
 } from 'lucide-react';
 
 const Acessorios = () => {
@@ -34,7 +34,7 @@ const Acessorios = () => {
     { name: 'Conexões Hidráulicas', icon: <Link className="h-8 w-8" /> },
     { name: 'Conexões Instantâneas', icon: <Settings className="h-8 w-8" /> },
     { name: 'Abraçadeiras', icon: <Disc className="h-8 w-8" /> },
-    { name: 'Espiões', icon: <Eye className="h-8 w-8" /> },
+    { name: 'Espigões', icon: <Plug className="h-8 w-8" /> },
     { name: 'Parafusos', icon: <Wrench className="h-8 w-8" /> },
     { name: 'Canecas para Elevadores', icon: <CupSoda className="h-8 w-8" /> },
     { name: 'Lençóis de Borracha', icon: <SquareStack className="h-8 w-8" /> },
