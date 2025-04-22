@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Header from '@/components/layout/Header';
@@ -7,6 +6,7 @@ import Hero from '@/components/sections/Hero';
 import Correias from '@/components/sections/Correias';
 import Mangueiras from '@/components/sections/Mangueiras';
 import Acessorios from '@/components/sections/Acessorios';
+import AcessoriosConexoes from '@/components/sections/AcessoriosConexoes';
 import QuemSomos from '@/components/sections/QuemSomos';
 import Depoimentos from '@/components/sections/Depoimentos';
 import Contato from '@/components/sections/Contato';
@@ -62,6 +62,7 @@ const Index = () => {
         <Hero />
         <Correias />
         <Mangueiras />
+        <AcessoriosConexoes />
         <Acessorios />
         <QuemSomos />
         <Depoimentos />
