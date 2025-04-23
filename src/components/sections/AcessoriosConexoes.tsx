@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import {
   Settings, Wrench, Circle, CircleDot, Package,
-  Filter, Package2, PackageOpen, Database, Valve
+  Filter, Package2, PackageOpen, Database 
 } from 'lucide-react';
 
 const produtos = [
@@ -76,7 +76,7 @@ const produtos = [
     name: 'Válvula Rosca 1/4 NPT para Engate Rápido e Mangueira 1/4',
     descricao: 'Aplicação: Válvula de passagem para sistemas com engate rápido\nRosca: 1/4 NPT',
     image: '/public/images/Valvula Rosca 1 4 Npt Para Engate Rapido Mangueira 1 4 .jpg',
-    Icon: Valve,
+    Icon: Wrench,
   },
   {
     name: 'Válvulas Esferas Diversas / Tri-Partidas',
