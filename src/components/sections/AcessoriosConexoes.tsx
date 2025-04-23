@@ -57,7 +57,7 @@ const produtos = [
   {
     name: 'Revestimento de Proteção para Mangueiras',
     descricao: 'Função: Proteger mangueiras contra abrasão, calor ou impactos\nUso: Externo em instalações industriais ou móveis',
-    image: '/public/images/Revestimento proteção mangueiras.jpg',
+    image: '/images/Revestimento proteção mangueiras.jpg',
     Icon: PackageOpen,
   },
   {
