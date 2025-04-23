@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
@@ -57,14 +58,14 @@ const ProductSection = ({ id, title, subtitle, products, bgColor = 'bg-white', r
           {products.map((product, index) => (
             <motion.div 
               key={index} 
-              className="card hover:shadow-lg overflow-hidden"
+              className="card hover:shadow-lg overflow-hidden relative" // Added relative positioning
               initial={{ opacity: 0, y: 20 }}
               animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 0.1 * index }}
             >
               <div className="relative h-64 flex items-center justify-center overflow-hidden">
                 {product.hasCarousel && (
-                  <div className="absolute top-2 right-2 bg-black/50 p-2 rounded-full">
+                  <div className="absolute top-2 right-2 z-10 bg-black/50 p-2 rounded-full">
                     <GalleryHorizontal 
                       className="w-5 h-5 text-white" 
                       strokeWidth={2} 
