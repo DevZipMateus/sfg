@@ -1,3 +1,4 @@
+
 import ProductSection from './ProductSection';
 import {
   Carousel,
@@ -45,7 +46,7 @@ const products = [
     description: 'Correias transportadoras robustas para transporte industrial.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
+    image: '/images/Correia Plana.jpeg',
     name: 'Correia Plana',
     description: 'Correias planas para movimentação e transporte leves ou pesados.'
   }
