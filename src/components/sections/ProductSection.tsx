@@ -1,8 +1,7 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
-import { Gallery } from 'lucide-react';
+import { GalleryHorizontal } from 'lucide-react';
 
 interface ProductSectionProps {
   id: string;
@@ -12,10 +11,10 @@ interface ProductSectionProps {
     image: string;
     name: string;
     description: string;
-    [key: string]: any; // Allow for additional properties like hasCarousel
+    [key: string]: any;
   }[];
   bgColor?: string;
-  renderImage?: (product: any) => React.ReactNode; // Add renderImage prop
+  renderImage?: (product: any) => React.ReactNode;
 }
 
 const ProductSection = ({ id, title, subtitle, products, bgColor = 'bg-white', renderImage }: ProductSectionProps) => {
@@ -66,7 +65,7 @@ const ProductSection = ({ id, title, subtitle, products, bgColor = 'bg-white', r
               <div className="relative h-64 flex items-center justify-center overflow-hidden">
                 {product.hasCarousel && (
                   <div className="absolute top-2 right-2 bg-black/50 p-2 rounded-full">
-                    <Gallery className="w-5 h-5 text-white" />
+                    <GalleryHorizontal className="w-5 h-5 text-white" />
                   </div>
                 )}
                 {renderImage ? (
@@ -94,4 +93,3 @@ const ProductSection = ({ id, title, subtitle, products, bgColor = 'bg-white', r
 };
 
 export default ProductSection;
-
