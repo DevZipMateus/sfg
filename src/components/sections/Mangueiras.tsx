@@ -1,8 +1,7 @@
-
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
-import { Droplet, Wrench, Circle, CupSoda, Pipe } from 'lucide-react';
+import { Droplet, Wrench, Circle, CupSoda, PipeIcon } from 'lucide-react';
 
 interface MangueiraProps {
   nome: string;
@@ -46,7 +45,6 @@ const Mangueiras = () => {
   }, []);
 
   useEffect(() => {
-    // Set first category as active by default when component mounts
     if (categorias.length > 0 && !activeCategory) {
       setActiveCategory(categorias[0].titulo);
     }
@@ -140,7 +138,7 @@ const Mangueiras = () => {
     },
     {
       titulo: "Mangueiras Flexíveis em PVC ou PU",
-      icone: <Pipe className="h-6 w-6" strokeWidth={1.5} />,
+      icone: <PipeIcon className="h-6 w-6" strokeWidth={1.5} />,
       descricao: "Leves, flexíveis, para limpeza, aspiração e uso geral.",
       mangueiras: [
         {
@@ -173,7 +171,7 @@ const Mangueiras = () => {
     },
     {
       titulo: "Mangueiras Reforçadas em PVC",
-      icone: <Pipe className="h-6 w-6" strokeWidth={1.5} />,
+      icone: <PipeIcon className="h-6 w-6" strokeWidth={1.5} />,
       descricao: "Duráveis, com malha interna para maior resistência.",
       mangueiras: [
         {
@@ -207,7 +205,6 @@ const Mangueiras = () => {
           </p>
         </motion.div>
 
-        {/* Categoria Tabs */}
         <div className="mb-12 overflow-x-auto">
           <div className="flex space-x-2 min-w-max">
             {categorias.map((categoria, index) => (
@@ -236,7 +233,6 @@ const Mangueiras = () => {
           </div>
         </div>
 
-        {/* Descrição da Categoria */}
         {activeCategory && (
           <motion.div
             className="bg-gray-50 p-4 rounded-lg mb-8"
@@ -250,7 +246,6 @@ const Mangueiras = () => {
           </motion.div>
         )}
 
-        {/* Produtos da Categoria */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {getActiveMangueiras().map((mangueira, index) => (
             <motion.div
