@@ -65,7 +65,11 @@ const ProductSection = ({ id, title, subtitle, products, bgColor = 'bg-white', r
               <div className="relative h-64 flex items-center justify-center overflow-hidden">
                 {product.hasCarousel && (
                   <div className="absolute top-2 right-2 bg-black/50 p-2 rounded-full">
-                    <GalleryHorizontal className="w-5 h-5 text-white" />
+                    <GalleryHorizontal 
+                      className="w-5 h-5 text-white" 
+                      strokeWidth={2} 
+                      color="#8B5CF6"
+                    />
                   </div>
                 )}
                 {renderImage ? (
