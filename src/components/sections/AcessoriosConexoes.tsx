@@ -1,76 +1,88 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import {
-  Settings, Wrench, Plug, SquareStack, SquareCheck, SquareEqual
+  Settings, Wrench, Circle, CircleDot, Package,
+  Filter, Package2, PackageOpen, Database, Valve
 } from 'lucide-react';
 
 const produtos = [
   {
-    name: 'Conexões instantâneas',
-    descricao: 'Agilidade e segurança na montagem de sistemas com conexões de alta performance.',
-    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
-    Icon: Settings,
-  },
-  {
-    name: 'Catalisador para cola vipal secagem 30 min ou 60 min',
-    descricao: 'Catalisador eficiente para colagem rápida e eficaz.',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
-    Icon: Plug,
-  },
-  {
-    name: 'Rodízios codas especial cereron haste e trava',
-    descricao: 'Rodízios especiais para movimentação de cargas com trava de segurança.',
-    image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
-    Icon: SquareStack,
-  },
-  {
-    name: 'Rodízios tipo pesado para andaimes',
-    descricao: 'Rodas robustas para uso em estruturas móveis pesadas.',
-    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
-    Icon: SquareCheck,
-  },
-  {
-    name: 'Rodízios travas tipo leves',
-    descricao: 'Rodízios leves ideais para móveis e equipamentos menores.',
-    image: 'https://images.unsplash.com/photo-1613375772563-af532af5cef9?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
-    Icon: SquareEqual,
-  },
-  {
-    name: 'Engates rápidos tipo puck look',
-    descricao: 'Soluções rápidas para conexão e desconexão de fluidos.',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
-    Icon: Plug,
-  },
-  {
-    name: 'Válvulas esferas de diversos tipos ou tri partidas',
-    descricao: 'Válvulas esferas industriais para uma variedade de aplicações.',
-    image: 'https://images.unsplash.com/photo-1590664216212-62e763768cbb?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
-    Icon: Settings,
-  },
-  {
-    name: 'Abraçadeiras tipo rosca sem fim leve, tipo mangotinho ou mangote',
-    descricao: 'Abraçadeiras para apertos precisos e fácil manutenção.',
-    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
+    name: 'Abraçadeiras tipo rosca sem fim (Leve, Mangotinho ou Mangote)',
+    descricao: 'Aplicação: Fixação de mangueiras em bocais ou conexões\nVariedades: Leve, para mangotinho ou mangote',
+    image: '/public/images/Abraçadeiras tipo rosca sem fim leve, tipo mangotinho ou mangote.jpeg',
     Icon: Wrench,
   },
   {
-    name: 'Tudo pu. Para conexões instantânea rolos. 50 ou 100 metros',
-    descricao: 'Tubo PU em rolos para sistemas pneumáticos.',
-    image: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
-    Icon: Plug,
+    name: 'Catalisador para Cola Vipal (30 min ou 60 min)',
+    descricao: 'Aplicação: Acelerador para secagem de colas industriais\nTempo de secagem: 30 min ou 60 min',
+    image: '/public/images/Catalisador para cola vipal secagem 30 mim ou 60 min.jpeg',
+    Icon: Circle,
   },
   {
-    name: 'Valvula Rosca 1/4 Npt Para Engate Rapido Mangueira 1/4',
-    descricao: 'Válvula compacta para sistemas de engate rápido.',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
+    name: 'Conexões Instantâneas',
+    descricao: 'Aplicação: Linhas pneumáticas, conexões rápidas para PU ou Nylon\nVantagem: Praticidade e vedação segura',
+    image: '/public/images/Conexões instantaneas.jpeg',
     Icon: Settings,
   },
   {
-    name: 'Engate rápido ar comprimido tipo ER 1 e pino macho',
-    descricao: 'Engate rápido confiável para linhas de ar comprimido.',
-    image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
-    Icon: Plug,
+    name: 'Engate Rápido Ar Comprimido Tipo ER-1 e Pino Macho',
+    descricao: 'Aplicação: Conexão/desconexão rápida em sistemas pneumáticos\nTipos: ER-1, Pino Macho',
+    image: '/public/images/Engate rápido ar comprimido tipo ER 1 e pino macho.jpg',
+    Icon: Package,
+  },
+  {
+    name: 'Engates Rápidos Tipo Puck Lock',
+    descricao: 'Aplicação: Sistemas hidráulicos ou pneumáticos com travamento seguro\nCaracterísticas: Alta vedação e trava rápida',
+    image: '/public/images/Engates rápidos tipo puck look.jpeg',
+    Icon: CircleDot,
+  },
+  {
+    name: 'Flexíveis Inox com Conexões Soldadas',
+    descricao: 'Aplicação: Diversos segmentos industriais\nMaterial: Aço inox\nExtras: Já montados com conexões soldadas',
+    image: '/public/images/Flexível de diversos tamanhos inox já com as conexões soldadas vários seguimentos uso.jpeg',
+    Icon: Filter,
+  },
+  {
+    name: 'Mangotes Flexíveis Montados',
+    descricao: 'Aplicação: Vapor, água quente, limpeza subterrânea, óleos\nCores: Branco, Laranja, Preto com tarja azul\nComprimento: Até 120 metros',
+    image: '/public/images/Mangotes flexíveis montados vapor frigorífico branca água quente,laranja montada 120 mts limpeza galerias subterrâneas borracha preta tarja azul oleos.jpeg',
+    Icon: Package2,
+  },
+  {
+    name: 'Polias Sincronizadas',
+    descricao: 'Aplicação: Transmissão mecânica com correias sincronizadas\nUtilização: Indústria, manutenção e reposição',
+    image: '/public/images/Polias sincronizadas.jpg',
+    Icon: Settings,
+  },
+  {
+    name: 'Revestimento de Proteção para Mangueiras',
+    descricao: 'Função: Proteger mangueiras contra abrasão, calor ou impactos\nUso: Externo em instalações industriais ou móveis',
+    image: '/public/images/Revestimento proteção mangueiras .jpg',
+    Icon: PackageOpen,
+  },
+  {
+    name: 'Tubo Gramianto para Descarga Quente (Piche/Asfalto)',
+    descricao: 'Aplicação: Descarga de piche, betume, asfalto quente\nMaterial: Resistente a altas temperaturas',
+    image: '/public/images/Tubo gramianto uso passagem quente descarga pinche de asfalto.jpeg',
+    Icon: Database,
+  },
+  {
+    name: 'Tubo PU para Conexões Instantâneas (50 ou 100 metros)',
+    descricao: 'Aplicação: Automação, pneumática\nRolos: 50m ou 100m',
+    image: '/public/images/Tudo pu. Para conexões instantânea rolos. 50 ou 100 metros.jpeg',
+    Icon: Filter,
+  },
+  {
+    name: 'Válvula Rosca 1/4 NPT para Engate Rápido e Mangueira 1/4',
+    descricao: 'Aplicação: Válvula de passagem para sistemas com engate rápido\nRosca: 1/4 NPT',
+    image: '/public/images/Valvula Rosca 1 4 Npt Para Engate Rapido Mangueira 1 4 .jpg',
+    Icon: Valve,
+  },
+  {
+    name: 'Válvulas Esferas Diversas / Tri-Partidas',
+    descricao: 'Aplicação: Controle de fluxo em sistemas hidráulicos e pneumáticos\nTipos: Esfera padrão ou tri-partidas',
+    image: '/public/images/Válvulas esferas de diversos tipos ou tri partidas.jpeg',
+    Icon: Settings,
   },
 ];
 
