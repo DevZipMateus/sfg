@@ -26,11 +26,6 @@ const products = [
     description: 'Perfeitas para sistemas que exigem precisão na transmissão de movimento.'
   },
   {
-    image: '/images/Correia Plana.jpeg',
-    name: 'Correias Planas',
-    description: 'Utilizadas em transportadores e sistemas com grandes distâncias entre polias.'
-  },
-  {
     image: '/images/Correias metro tipo accu link perfil Z A,B Ou C.jpeg',
     name: 'Correias metro tipo accu link perfil Z A,B Ou C',
     description: 'Correias montáveis de diversos perfis para aplicações customizadas.'
@@ -44,11 +39,6 @@ const products = [
     image: '/images/Correia transportadora.jpg',
     name: 'Correia transportadora',
     description: 'Correias transportadoras robustas para transporte industrial.'
-  },
-  {
-    image: '/images/Correia Plana.jpeg',
-    name: 'Correia Plana',
-    description: 'Correias planas para movimentação e transporte leves ou pesados.'
   }
 ];
 
