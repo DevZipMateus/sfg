@@ -11,11 +11,13 @@ interface ProductSectionProps {
     image: string;
     name: string;
     description: string;
+    [key: string]: any; // Allow for additional properties like hasCarousel
   }[];
   bgColor?: string;
+  renderImage?: (product: any) => React.ReactNode; // Add renderImage prop
 }
 
-const ProductSection = ({ id, title, subtitle, products, bgColor = 'bg-white' }: ProductSectionProps) => {
+const ProductSection = ({ id, title, subtitle, products, bgColor = 'bg-white', renderImage }: ProductSectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -61,14 +63,18 @@ const ProductSection = ({ id, title, subtitle, products, bgColor = 'bg-white' }:
               transition={{ duration: 0.5, delay: 0.1 * index }}
             >
               <div className="h-48 overflow-hidden">
-                <img 
-                  src={product.image} 
-                  alt={product.name} 
-                  className="w-full h-full object-cover image-zoom"
-                  width="300"
-                  height="200"
-                  loading={index < 4 ? "eager" : "lazy"}
-                />
+                {renderImage ? (
+                  renderImage(product)
+                ) : (
+                  <img 
+                    src={product.image} 
+                    alt={product.name} 
+                    className="w-full h-full object-cover image-zoom"
+                    width="300"
+                    height="200"
+                    loading={index < 4 ? "eager" : "lazy"}
+                  />
+                )}
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
