@@ -138,7 +138,7 @@ const Mangueiras = () => {
     },
     {
       titulo: "Mangueiras Flexíveis em PVC ou PU",
-      icone: <Pipe className="h-6 w-6" strokeWidth={1.5} />,
+      icone: <Wrench className="h-6 w-6" strokeWidth={1.5} />, // Replaced Pipe/PipeIcon with Wrench as a fallback
       descricao: "Leves, flexíveis, para limpeza, aspiração e uso geral.",
       mangueiras: [
         {
@@ -171,7 +171,7 @@ const Mangueiras = () => {
     },
     {
       titulo: "Mangueiras Reforçadas em PVC",
-      icone: <Pipe className="h-6 w-6" strokeWidth={1.5} />,
+      icone: <Wrench className="h-6 w-6" strokeWidth={1.5} />, // Replaced Pipe/PipeIcon with Wrench as a fallback
       descricao: "Duráveis, com malha interna para maior resistência.",
       mangueiras: [
         {
