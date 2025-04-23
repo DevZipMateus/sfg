@@ -1,8 +1,7 @@
-
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
-import { Droplet, Wrench, Circle, CupSoda, Pipe } from 'lucide-react';
+import { Droplet, Wrench, Circle, CupSoda, PipeIcon } from 'lucide-react';
 
 interface MangueiraProps {
   nome: string;
@@ -139,7 +138,7 @@ const Mangueiras = () => {
     },
     {
       titulo: "Mangueiras Flexíveis em PVC ou PU",
-      icone: <Pipe className="h-6 w-6" strokeWidth={1.5} />,
+      icone: <PipeIcon className="h-6 w-6" strokeWidth={1.5} />,
       descricao: "Leves, flexíveis, para limpeza, aspiração e uso geral.",
       mangueiras: [
         {
@@ -172,7 +171,7 @@ const Mangueiras = () => {
     },
     {
       titulo: "Mangueiras Reforçadas em PVC",
-      icone: <Pipe className="h-6 w-6" strokeWidth={1.5} />,
+      icone: <PipeIcon className="h-6 w-6" strokeWidth={1.5} />,
       descricao: "Duráveis, com malha interna para maior resistência.",
       mangueiras: [
         {
