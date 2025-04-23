@@ -1,19 +1,31 @@
 
 import ProductSection from './ProductSection';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+const correiaEmVImages = [
+  '/images/Correia em V dupla sextavada.jpeg',
+  '/images/correias em V lisas ou dentadas.jpeg'
+];
 
 const products = [
   {
-    image: 'https://images.unsplash.com/photo-1633362078392-602f361d5fb4?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
+    carousel: correiaEmVImages,
     name: 'Correias em V',
     description: 'Ideais para transmissão de potência em equipamentos industriais e agrícolas.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1607827448387-a74355252c7c?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
+    image: '/images/Correia sincronizada - Duplo dentes.jpeg',
     name: 'Correias Sincronizadas',
     description: 'Perfeitas para sistemas que exigem precisão na transmissão de movimento.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1582398090980-c768cded9d8c?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
+    image: '/images/Correia Plana.jpeg',
     name: 'Correias Planas',
     description: 'Utilizadas em transportadores e sistemas com grandes distâncias entre polias.'
   },
@@ -22,14 +34,13 @@ const products = [
     name: 'Correias Fora de Padrão',
     description: 'Soluções personalizadas para aplicações específicas e não convencionais.'
   },
-  // Novos produtos:
   {
-    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
+    image: '/images/Correias metro tipo accu link perfil Z A,B Ou C.jpeg',
     name: 'Correias metro tipo accu link perfil Z A,B Ou C',
     description: 'Correias montáveis de diversos perfis para aplicações customizadas.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
+    image: '/images/Polias sincronizadas.jpg',
     name: 'Polias sincronizadas',
     description: 'Polias para correias sincronizadas, precisão e durabilidade.'
   },
@@ -44,7 +55,7 @@ const products = [
     description: 'Correias Power band para aplicações de alta potência.'
   },
   {
-    image: 'https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&w=600',
+    image: '/images/Correia transportadora.jpg',
     name: 'Correia transportadora',
     description: 'Correias transportadoras robustas para transporte industrial.'
   },
@@ -93,9 +104,36 @@ const Correias = () => {
       subtitle="Oferecemos uma linha completa de correias para diversas aplicações industriais"
       products={products}
       bgColor="bg-gray-50"
+      renderImage={(product) => {
+        if (product.carousel) {
+          return (
+            <Carousel className="w-full">
+              <CarouselContent>
+                {product.carousel.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <img
+                      src={image}
+                      alt={`${product.name} - Imagem ${index + 1}`}
+                      className="w-full h-64 object-cover rounded-t-lg"
+                    />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          );
+        }
+        return (
+          <img
+            src={product.image}
+            alt={product.name}
+            className="w-full h-64 object-cover rounded-t-lg"
+          />
+        );
+      }}
     />
   );
 };
 
 export default Correias;
-
