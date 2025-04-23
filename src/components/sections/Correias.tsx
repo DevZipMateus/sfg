@@ -15,9 +15,10 @@ const correiaEmVImages = [
 
 const products = [
   {
-    carousel: correiaEmVImages,
+    image: correiaEmVImages[0], // Default image for type compliance
     name: 'Correias em V',
-    description: 'Ideais para transmissão de potência em equipamentos industriais e agrícolas.'
+    description: 'Ideais para transmissão de potência em equipamentos industriais e agrícolas.',
+    hasCarousel: true // Custom property to identify carousel items
   },
   {
     image: '/images/Correia sincronizada - Duplo dentes.jpeg',
@@ -105,11 +106,11 @@ const Correias = () => {
       products={products}
       bgColor="bg-gray-50"
       renderImage={(product) => {
-        if (product.carousel) {
+        if (product.hasCarousel) {
           return (
             <Carousel className="w-full">
               <CarouselContent>
-                {product.carousel.map((image, index) => (
+                {correiaEmVImages.map((image, index) => (
                   <CarouselItem key={index}>
                     <img
                       src={image}
