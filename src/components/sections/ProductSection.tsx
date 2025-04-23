@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { Gallery } from 'lucide-react';
 
 interface ProductSectionProps {
   id: string;
@@ -62,14 +63,19 @@ const ProductSection = ({ id, title, subtitle, products, bgColor = 'bg-white', r
               animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: 0.1 * index }}
             >
-              <div className="h-64 flex items-center justify-center overflow-hidden"> {/* Increased height and centered content */}
+              <div className="relative h-64 flex items-center justify-center overflow-hidden">
+                {product.hasCarousel && (
+                  <div className="absolute top-2 right-2 bg-black/50 p-2 rounded-full">
+                    <Gallery className="w-5 h-5 text-white" />
+                  </div>
+                )}
                 {renderImage ? (
                   renderImage(product)
                 ) : (
                   <img 
                     src={product.image} 
                     alt={product.name} 
-                    className="max-w-full max-h-full object-contain" // Changed to object-contain to show full image
+                    className="max-w-full max-h-full object-contain"
                     width="300"
                     height="256"
                   />
