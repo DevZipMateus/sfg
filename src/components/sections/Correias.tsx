@@ -85,12 +85,7 @@ const Correias = () => {
       aplicacao: "Substituição rápida de correias tradicionais",
       vantagem: "Ajustável conforme necessidade",
       perfis: "Z, A, B, C"
-    }, {
-      nome: "Correias Gerais",
-      imagem: "/images/correias.jpeg",
-      aplicacao: "Agrupamento geral das correias lisas, dentadas e de V",
-      caracteristicas: "Diversos tipos e aplicações"
-    }]
+    }, 
   }, {
     titulo: "Correias Sincronizadas e Sincronismo Especial",
     icone: <Link className="h-6 w-6" strokeWidth={1.5} />,
