@@ -1,3 +1,4 @@
+
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
@@ -15,6 +16,8 @@ interface CorreiaProps {
   uso?: string;
   vantagem?: string;
   marca?: string;
+  Reforço?: string;
+  Características?: string;
 }
 
 interface CategoriaProps {
@@ -120,12 +123,12 @@ const Correias = () => {
       imagem: "/images/Rolos correias:transportadora e borrachas.jpeg",
       aplicacao: "Venda por metro ou montagem personalizada",
       caracteristicas: "Correias transportadoras e borrachas industriais"
-    }{
+    }, {
       nome: "Correias Transportadoras de Borracha (2 e 3 Lonas)",
       imagem: "/images/Correias transportadoras borrachas 2 e 3 lonas.jpeg",
       aplicacao: "Transporte contínuo de materiais",
       Reforço: "Alta resistência com múltiplas lonas"
-    },]
+    }]
   }];
 
   const getActiveCorreias = () => {
