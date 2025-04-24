@@ -22,7 +22,7 @@ const produtos = [{
   image: '/images/Conexões instantaneas.jpeg',
   Icon: Settings
 }, {
-  name: 'Engate Rápido Ar Comprimido Tipo ER-1 Rosca Macho',
+  name: 'Pino para engate rápido Ar Comprimido ER-1 Rosca Macho',
   descricao: 'Aplicação: Conexão/desconexão rápida em sistemas pneumáticos\nTipos: ER-1, Rosca Macho',
   image: '/images/Engate rápido ar comprimido tipo ER 1 e pino macho.jpg',
   Icon: Package
@@ -62,7 +62,7 @@ const produtos = [{
   image: '/images/Tudo pu. Para conexões instantânea rolos. 50 ou 100 metros.jpeg',
   Icon: Filter
 }, {
-  name: 'Válvula Rosca fêmea ER 1 para Engate Rápido',
+  name: 'Engate Rápido fêmea ER 1',
   descricao: 'Aplicação: Válvula de passagem para sistemas com engate rápido\nRosca: Rosca Fêmea ER 1 ',
   image: '/images/Valvula Rosca 1 4 Npt Para Engate Rapido Mangueira 1 4 .jpg',
   Icon: Wrench
