@@ -215,6 +215,9 @@ const Mangueiras = () => {
     }
   ];
 
+  // Remove the last duplicate category
+  categorias.pop();
+
   const getActiveMangueiras = () => {
     if (!activeCategory) return [];
     const categoria = categorias.find(cat => cat.titulo === activeCategory);
