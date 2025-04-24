@@ -70,7 +70,7 @@ const Correias = () => {
       aplicacao: "Transmissões com polias em ambos os lados",
       formato: "Sextavado – dupla face de tração"
     }, {
-      nome: "Correias em V Tipo Power Band",
+      nome: "Correias em V Torque team ou Power band vários canais",
       imagem: "/images/Correias em V tipo Power band.jpeg",
       aplicacao: "Equipamentos de alta potência e vibração",
       caracteristicas: "Correias múltiplas unificadas em banda"
