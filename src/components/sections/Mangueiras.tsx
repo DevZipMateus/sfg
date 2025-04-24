@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
-import { Droplet, Wrench, Circle, CupSoda } from 'lucide-react';
+import { Droplet, Wrench, Circle, CupSoda, Ruler, Box, Hammer, Square } from 'lucide-react';
 
 interface MangueiraProps {
   nome: string;
@@ -179,6 +179,44 @@ const Mangueiras = () => {
           imagem: "/images/Mangueira tipo PVC. PT 250 cristal trancada 250 psi.jpeg",
           aplicacao: "Uso geral",
           caracteristica: "Pressão: Até 250 psi, Reforço: Malha trançada"
+        }
+      ]
+    },
+    {
+      titulo: "Revestimentos e Pisos Industriais",
+      icone: <Square className="h-6 w-6" strokeWidth={1.5} />,
+      descricao: "Soluções em revestimentos para proteção e segurança industrial.",
+      mangueiras: [
+        {
+          nome: "Lençol de Borracha com ou sem Lona",
+          imagem: "/images/Lençol borracha com ou sem lona.jpeg",
+          aplicacao: "Vedação, proteção e pisos industriais",
+          caracteristica: "Variações: Com reforço (lona) ou sem"
+        },
+        {
+          nome: "Piso de Borracha 50x50",
+          imagem: "/images/Piso borracha 50x50.jpeg",
+          aplicacao: "Revestimento de áreas industriais ou comerciais",
+          caracteristica: "Formato: Placas 50cm x 50cm – Antiderrapante"
+        }
+      ]
+    },
+    {
+      titulo: "Mangueiras Hidráulicas e Alta Pressão",
+      icone: <Wrench className="h-6 w-6" strokeWidth={1.5} />,
+      descricao: "Reforçadas para condução de fluídos sob alta pressão.",
+      mangueiras: [
+        {
+          nome: "Mangueiras Hidráulicas Diversos Tipos",
+          imagem: "/images/Mangueiras hidráulicas diversos tipos 1,2 tramas ou outros tipo.jpeg",
+          aplicacao: "Linhas hidráulicas industriais",
+          caracteristica: "Tipos: 1 trama, 2 tramas ou trançadas de aço"
+        },
+        {
+          nome: "Conexões para Mangueiras Hidráulicas",
+          imagem: "/images/Conexões para mangueiras hidrailicas.jpeg",
+          aplicacao: "Conexão entre linhas hidráulicas",
+          caracteristica: "Compatibilidade: Vários diâmetros e pressões"
         }
       ]
     }

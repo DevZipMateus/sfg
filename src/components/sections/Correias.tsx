@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { Wrench, Package, Link } from 'lucide-react';
+
 interface CorreiaProps {
   nome: string;
   imagem: string;
@@ -15,16 +16,19 @@ interface CorreiaProps {
   vantagem?: string;
   marca?: string;
 }
+
 interface CategoriaProps {
   titulo: string;
   icone: JSX.Element;
   descricao: string;
   correias: CorreiaProps[];
 }
+
 const Correias = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
@@ -43,11 +47,13 @@ const Correias = () => {
       }
     };
   }, []);
+
   useEffect(() => {
     if (categorias.length > 0 && !activeCategory) {
       setActiveCategory(categorias[0].titulo);
     }
   }, []);
+
   const categorias: CategoriaProps[] = [{
     titulo: "Correias de Transmissão de Potência",
     icone: <Wrench className="h-6 w-6" strokeWidth={1.5} />,
@@ -79,6 +85,11 @@ const Correias = () => {
       aplicacao: "Substituição rápida de correias tradicionais",
       vantagem: "Ajustável conforme necessidade",
       perfis: "Z, A, B, C"
+    }, {
+      nome: "Correias Gerais",
+      imagem: "/images/correias.jpeg",
+      aplicacao: "Agrupamento geral das correias lisas, dentadas e de V",
+      caracteristicas: "Diversos tipos e aplicações"
     }]
   }, {
     titulo: "Correias Sincronizadas e Sincronismo Especial",
@@ -116,11 +127,13 @@ const Correias = () => {
       caracteristicas: "Correias transportadoras e borrachas industriais"
     }]
   }];
+
   const getActiveCorreias = () => {
     if (!activeCategory) return [];
     const categoria = categorias.find(cat => cat.titulo === activeCategory);
     return categoria ? categoria.correias : [];
   };
+
   return <section id="correias" ref={sectionRef} className="bg-gray-50 py-0">
       <div className="container-section">
         <motion.div className="text-center max-w-3xl mx-auto mb-12" initial={{
@@ -216,4 +229,5 @@ const Correias = () => {
       </div>
     </section>;
 };
+
 export default Correias;

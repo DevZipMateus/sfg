@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Settings, Wrench, Circle, CircleDot, Package, Filter, Package2, PackageOpen, Database } from 'lucide-react';
+import { Settings, Wrench, Box, Hammer, Square } from 'lucide-react';
+
 const produtos = [{
   name: 'Abraçadeiras tipo rosca sem fim (Leve, Mangotinho ou Mangote)',
   descricao: 'Aplicação: Fixação de mangueiras em bocais ou conexões\nVariedades: Leve, para mangotinho ou mangote',
@@ -66,7 +67,28 @@ const produtos = [{
   descricao: 'Aplicação: Controle de fluxo em sistemas hidráulicos e pneumáticos\nTipos: Esfera padrão ou tri-partidas',
   image: '/images/Válvulas esferas de diversos tipos ou tri partidas.jpeg',
   Icon: Settings
+}, {
+  name: 'Espigões (Aço Laminado, Inox ou Latão)',
+  descricao: 'Aplicação: Conexões para mangueiras e tubos\nMaterial: Aço inox, laminado ou latão',
+  image: '/images/Espigoes aço laminado ou aço inox ou latao.jpeg',
+  Icon: Wrench
+}, {
+  name: 'Grampos',
+  descricao: 'Aplicação: Fixação de correias transportadoras\nMaterial: Aço zincado ou galvanizado',
+  image: '/images/grampos.jpeg',
+  Icon: Hammer
+}, {
+  name: 'Parafusos para Caçambas',
+  descricao: 'Aplicação: Fixação de caçambas em elevadores ou esteiras\nTipo: Cabeça abaulada ou especial para chapas metálicas',
+  image: '/images/Parafusos para caçambas.jpeg',
+  Icon: Settings
+}, {
+  name: 'Canecas para Elevadores de Cereais',
+  descricao: 'Aplicação: Transporte vertical de grãos e produtos a granel\nMaterial: Plástico ou metálico',
+  image: '/images/Canecas elevadores cereais.jpeg',
+  Icon: Box
 }];
+
 const AcessoriosConexoes = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -128,4 +150,5 @@ const AcessoriosConexoes = () => {
       </div>
     </section>;
 };
+
 export default AcessoriosConexoes;
