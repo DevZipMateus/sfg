@@ -9,97 +9,97 @@ import {
 const produtos = [{
   name: 'Abraçadeiras tipo rosca sem fim (Leve, Mangotinho ou Mangote)',
   descricao: 'Aplicação: Fixação de mangueiras em bocais ou conexões\nVariedades: Leve, para mangotinho ou mangote',
-  image: '/images/Abraçadeiras tipo rosca sem fim leve, tipo mangotinho ou mangote.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Wrench
 }, {
   name: 'Catalisador para Cola Vipal (30 min ou 60 min)',
   descricao: 'Aplicação: Acelerador para secagem de colas industriais\nTempo de secagem: 30 min ou 60 min',
-  image: '/images/Catalisador para cola vipal secagem 30 mim ou 60 min.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Circle
 }, {
   name: 'Conexões Instantâneas',
   descricao: 'Aplicação: Linhas pneumáticas, conexões rápidas para PU ou Nylon\nVantagem: Praticidade e vedação segura',
-  image: '/images/Conexões instantaneas.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Settings
 }, {
   name: 'Engate Rápido Ar Comprimido Tipo ER-1 Rosca Macho',
   descricao: 'Aplicação: Conexão/desconexão rápida em sistemas pneumáticos\nTipos: ER-1, Rosca Macho',
-  image: '/images/Engate rápido ar comprimido tipo ER 1 e pino macho.jpg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Package
 }, {
   name: 'Engates Rápidos Tipo Puck Lock',
   descricao: 'Aplicação: Sistemas hidráulicos ou pneumáticos com travamento seguro\nCaracterísticas: Alta vedação e trava rápida',
-  image: '/images/Engates rápidos tipo puck look.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: CircleDot
 }, {
   name: 'Flexíveis Inox com Conexões Soldadas',
   descricao: 'Aplicação: Diversos segmentos industriais\nMaterial: Aço inox\nExtras: Já montados com conexões soldadas',
-  image: '/images/Flexível de diversos tamanhos inox já com as conexões soldadas vários seguimentos uso.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Filter
 }, {
   name: 'Mangotes Flexíveis Montados',
   descricao: 'Aplicação: Vapor, água quente, limpeza subterrânea, óleos\nCores: Branco, Laranja, Preto com tarja azul\nComprimento: Até 120 metros',
-  image: '/images/Mangotes flexíveis montados vapor frigorífico branca água quente,laranja montada 120 mts limpeza galerias subterrâneas borracha preta tarja azul oleos.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Package2
 }, {
   name: 'Polias Sincronizadas',
   descricao: 'Aplicação: Transmissão mecânica com correias sincronizadas\nUtilização: Indústria, manutenção e reposição',
-  image: '/images/Polias sincronizadas.jpg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Settings
 }, {
   name: 'Revestimento de Proteção para Mangueiras',
   descricao: 'Função: Proteger mangueiras contra abrasão, calor ou impactos\nUso: Externo em instalações industriais ou móveis',
-  image: '/images/Revestimentoproteçãomangueiras.jpg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: PackageOpen
 }, {
   name: 'Tubo Gramianto para Descarga Quente (Piche/Asfalto)',
   descricao: 'Aplicação: Descarga de piche, betume, asfalto quente\nMaterial: Resistente a altas temperaturas',
-  image: '/images/Tubo gramianto uso passagem quente descarga pinche de asfalto.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Database
 }, {
   name: 'Tubo PU para Conexões Instantâneas (50 ou 100 metros)',
   descricao: 'Aplicação: Automação, pneumática\nRolos: 50m ou 100m',
-  image: '/images/Tudo pu. Para conexões instantânea rolos. 50 ou 100 metros.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Filter
 }, {
   name: 'Válvula Rosca fêmea ER 1 para Engate Rápido',
   descricao: 'Aplicação: Válvula de passagem para sistemas com engate rápido\nRosca: Rosca Fêmea ER 1 ',
-  image: '/images/Valvula Rosca 1 4 Npt Para Engate Rapido Mangueira 1 4 .jpg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Wrench
 }, {
   name: 'Válvulas Esferas Diversas / Tri-Partidas',
   descricao: 'Aplicação: Controle de fluxo em sistemas hidráulicos e pneumáticos\nTipos: Esfera padrão ou tri-partidas',
-  image: '/images/Válvulas esferas de diversos tipos ou tri partidas.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Settings
 }, {
   name: 'Espigões (Aço Laminado, Inox ou Latão)',
   descricao: 'Aplicação: Conexões para mangueiras e tubos\nMaterial: Aço inox, laminado ou latão',
-  image: '/images/Espigoes aço laminado ou aço inox ou latao.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Wrench
 }, {
   name: 'Grampos',
   descricao: 'Aplicação: Fixação de correias transportadoras\nMaterial: Aço zincado ou galvanizado',
-  image: '/images/grampos.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Hammer
 }, {
   name: 'Parafusos para Caçambas',
   descricao: 'Aplicação: Fixação de caçambas em elevadores ou esteiras\nTipo: Cabeça abaulada ou especial para chapas metálicas',
-  image: '/images/Parafusos para caçambas.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Settings
 }, {
   name: 'Canecas para Elevadores de Cereais',
   descricao: 'Aplicação: Transporte vertical de grãos e produtos a granel\nMaterial: Plástico ou metálico',
-  image: '/images/Canecas elevadores cereais.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Box
 }, {
   name: 'Lençol de Borracha com ou sem Lona',
   descricao: 'Aplicação: Vedação, proteção e pisos industriais\nVariações: Com reforço (lona) ou sem',
-  image: '/images/Lençol borracha com ou sem lona.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Square
 }, {
   name: 'Piso de Borracha 50x50',
   descricao: 'Aplicação: Revestimento de áreas industriais ou comerciais\nFormato: Placas 50cm x 50cm – Antiderrapante',
-  image: '/images/Piso borracha 50x50.jpeg',
+  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
   Icon: Square
 }];
 

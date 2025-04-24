@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
@@ -63,28 +62,28 @@ const Correias = () => {
     descricao: "Correias especializadas para transmissão de força e movimento em equipamentos industriais.",
     correias: [{
       nome: "Correia em V - Marca Elite",
-      imagem: "/images/correia em V marca Elite.jpeg",
+      imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
       aplicacao: "Transmissão em motores e polias",
       formato: "V clássico",
       marca: "Elite"
     }, {
       nome: "Correia em V Dupla Sextavada",
-      imagem: "/images/Correia em V dupla sextavada.jpeg",
+      imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
       aplicacao: "Transmissões com polias em ambos os lados",
       formato: "Sextavado – dupla face de tração"
     }, {
       nome: "Correias em V Torque team ou Power band vários canais",
-      imagem: "/images/Correias em V tipo Power band.jpeg",
+      imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
       aplicacao: "Equipamentos de alta potência e vibração",
       caracteristicas: "Correias múltiplas unificadas em banda"
     }, {
       nome: "Correias em V Lisas ou Dentadas",
-      imagem: "/images/correias em V lisas ou dentadas.jpeg",
+      imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
       aplicacao: "Diversas máquinas industriais",
       variedades: "Lisa (maior aderência), dentada (flexibilidade e ventilação)"
     }, {
       nome: "Correias Metro Tipo Accu Link",
-      imagem: "/images/Correias metro tipo accu link perfil Z A,B Ou C.jpeg",
+      imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
       aplicacao: "Substituição rápida de correias tradicionais",
       vantagem: "Ajustável conforme necessidade",
       perfis: "Z, A, B, C"
@@ -95,12 +94,12 @@ const Correias = () => {
     descricao: "Correias com design especial para aplicações que exigem sincronismo preciso.",
     correias: [{
       nome: "Correia Sincronizada - Duplo Dentes",
-      imagem: "/images/Correia sincronizada - Duplo dentes.jpeg",
+      imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
       aplicacao: "Sincronismo de motores e máquinas",
       formato: "Denteado dos dois lados"
     }, {
       nome: "Correia Sincronizada - Dentes Desencontrados",
-      imagem: "/images/Correia sincronizada dentes desencontrados especial.jpeg",
+      imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
       aplicacao: "Equipamentos com sincronismo específico",
       diferencial: "Engrenamento de dentes alternado para redução de ruído ou tranco"
     }]
@@ -110,22 +109,22 @@ const Correias = () => {
     descricao: "Soluções para transporte de materiais e aplicações industriais específicas.",
     correias: [{
       nome: "Correias Laminadas para Elevador de Canecas (2 a 6 Lonas)",
-      imagem: "/images/Correia Plana.jpeg",
+      imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
       aplicacao: "Sistemas de elevação de grãos e minerais",
       Características: "Com ou sem película, 2 a 6 lonas"
     }, {
       nome: "Correia Transportadora",
-      imagem: "/images/Correia transportadora.jpg",
+      imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
       aplicacao: "Movimentação de materiais (indústrias, mineração, etc.)",
       caracteristicas: "Alta resistência e durabilidade"
     }, {
       nome: "Rolos de Correias",
-      imagem: "/images/Rolos correias:transportadora e borrachas.jpeg",
+      imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
       aplicacao: "Venda por metro ou montagem personalizada",
       caracteristicas: "Correias transportadoras e borrachas industriais"
     }, {
       nome: "Correias Transportadoras de Borracha (2 e 3 Lonas)",
-      imagem: "/images/Correias transportadoras borrachas 2 e 3 lonas.jpeg",
+      imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
       aplicacao: "Transporte contínuo de materiais",
       Reforço: "Alta resistência com múltiplas lonas"
     }]
