@@ -97,6 +97,18 @@ const Mangueiras = () => {
           imagem: "/images/Mangueira nylon passagem produtos óleos alta pressão.jpeg",
           aplicacao: "Produtos químicos e óleos",
           caracteristica: "Alta resistência"
+        },
+        {
+          nome: "Mangueiras Hidráulicas Diversos Tipos",
+          imagem: "/images/Mangueiras hidráulicas diversos tipos 1,2 tramas ou outros tipo.jpeg",
+          aplicacao: "Linhas hidráulicas industriais",
+          caracteristica: "Tipos: 1 trama, 2 tramas ou trançadas de aço"
+        },
+        {
+          nome: "Conexões para Mangueiras Hidráulicas",
+          imagem: "/images/Conexões para mangueiras hidrailicas.jpeg",
+          aplicacao: "Conexão entre linhas hidráulicas",
+          caracteristica: "Compatibilidade: Vários diâmetros e pressões"
         }
       ]
     },
