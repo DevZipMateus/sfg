@@ -54,79 +54,88 @@ const Correias = () => {
     }
   }, []);
 
-  const categorias: CategoriaProps[] = [{
-    titulo: "Correias de Transmissão de Potência",
-    icone: <Wrench className="h-6 w-6" strokeWidth={1.5} />,
-    descricao: "Correias especializadas para transmissão de força e movimento em equipamentos industriais.",
-    correias: [{
-      nome: "Correia em V - Marca Elite",
-      imagem: "/images/correia em V marca Elite.jpeg",
-      aplicacao: "Transmissão em motores e polias",
-      formato: "V clássico",
-      marca: "Elite"
-    }, {
-      nome: "Correia em V Dupla Sextavada",
-      imagem: "/images/Correia em V dupla sextavada.jpeg",
-      aplicacao: "Transmissões com polias em ambos os lados",
-      formato: "Sextavado – dupla face de tração"
-    }, {
-      nome: "Correias em V Torque team ou Power band vários canais",
-      imagem: "/images/Correias em V tipo Power band.jpeg",
-      aplicacao: "Equipamentos de alta potência e vibração",
-      caracteristicas: "Correias múltiplas unificadas em banda"
-    }, {
-      nome: "Correias em V Lisas ou Dentadas",
-      imagem: "/images/correias em V lisas ou dentadas.jpeg",
-      aplicacao: "Diversas máquinas industriais",
-      variedades: "Lisa (maior aderência), dentada (flexibilidade e ventilação)"
-    }, {
-      nome: "Correias Metro Tipo Accu Link",
-      imagem: "/images/Correias metro tipo accu link perfil Z A,B Ou C.jpeg",
-      aplicacao: "Substituição rápida de correias tradicionais",
-      vantagem: "Ajustável conforme necessidade",
-      perfis: "Z, A, B, C"
-    }]
-  }, {
-    titulo: "Correias Sincronizadas e Sincronismo Especial",
-    icone: <Link className="h-6 w-6" strokeWidth={1.5} />,
-    descricao: "Correias com design especial para aplicações que exigem sincronismo preciso.",
-    correias: [{
-      nome: "Correia Sincronizada - Duplo Dentes",
-      imagem: "/images/Correia sincronizada - Duplo dentes.jpeg",
-      aplicacao: "Sincronismo de motores e máquinas",
-      formato: "Denteado dos dois lados"
-    }, {
-      nome: "Correia Sincronizada - Dentes Desencontrados",
-      imagem: "/images/Correia sincronizada dentes desencontrados especial.jpeg",
-      aplicacao: "Equipamentos com sincronismo específico",
-      diferencial: "Engrenamento de dentes alternado para redução de ruído ou tranco"
-    }]
-  }, {
-    titulo: "Correias Planas e de Transporte",
-    icone: <Package className="h-6 w-6" strokeWidth={1.5} />,
-    descricao: "Soluções para transporte de materiais e aplicações industriais específicas.",
-    correias: [{
-      nome: "Correias Laminadas para Elevador de Canecas (2 a 6 Lonas)",
-      imagem: "/images/Correia Plana.jpeg",
-      aplicacao: "Sistemas de elevação de grãos e minerais",
-      Características: "Com ou sem película, 2 a 6 lonas"
-    }, {
-      nome: "Correia Transportadora",
-      imagem: "/images/Correia transportadora.jpg",
-      aplicacao: "Movimentação de materiais (indústrias, mineração, etc.)",
-      caracteristicas: "Alta resistência e durabilidade"
-    }, {
-      nome: "Rolos de Correias",
-      imagem: "/images/Rolos correias:transportadora e borrachas.jpeg",
-      aplicacao: "Venda por metro ou montagem personalizada",
-      caracteristicas: "Correias transportadoras e borrachas industriais"
-    }{
-      nome: "Correias Transportadoras de Borracha (2 e 3 Lonas)",
-      imagem: "/images/Correias transportadoras borrachas 2 e 3 lonas.jpeg",
-      aplicacao: "Transporte contínuo de materiais",
-      Reforço: "Alta resistência com múltiplas lonas"
-    },]
-  }];
+  const categorias: CategoriaProps[] = [
+    {
+      titulo: "Correias de Transmissão de Potência",
+      icone: <Wrench className="h-6 w-6" strokeWidth={1.5} />,
+      descricao: "Correias especializadas para transmissão de força e movimento em equipamentos industriais.",
+      correias: [{
+        nome: "Correia em V - Marca Elite",
+        imagem: "/images/correia em V marca Elite.jpeg",
+        aplicacao: "Transmissão em motores e polias",
+        formato: "V clássico",
+        marca: "Elite"
+      }, {
+        nome: "Correia em V Dupla Sextavada",
+        imagem: "/images/Correia em V dupla sextavada.jpeg",
+        aplicacao: "Transmissões com polias em ambos os lados",
+        formato: "Sextavado – dupla face de tração"
+      }, {
+        nome: "Correias em V Torque team ou Power band vários canais",
+        imagem: "/images/Correias em V tipo Power band.jpeg",
+        aplicacao: "Equipamentos de alta potência e vibração",
+        caracteristicas: "Correias múltiplas unificadas em banda"
+      }, {
+        nome: "Correias em V Lisas ou Dentadas",
+        imagem: "/images/correias em V lisas ou dentadas.jpeg",
+        aplicacao: "Diversas máquinas industriais",
+        variedades: "Lisa (maior aderência), dentada (flexibilidade e ventilação)"
+      }, {
+        nome: "Correias Metro Tipo Accu Link",
+        imagem: "/images/Correias metro tipo accu link perfil Z A,B Ou C.jpeg",
+        aplicacao: "Substituição rápida de correias tradicionais",
+        vantagem: "Ajustável conforme necessidade",
+        perfis: "Z, A, B, C"
+      }]
+    },
+    {
+      titulo: "Correias Sincronizadas e Sincronismo Especial",
+      icone: <Link className="h-6 w-6" strokeWidth={1.5} />,
+      descricao: "Correias com design especial para aplicações que exigem sincronismo preciso.",
+      correias: [{
+        nome: "Correia Sincronizada - Duplo Dentes",
+        imagem: "/images/Correia sincronizada - Duplo dentes.jpeg",
+        aplicacao: "Sincronismo de motores e máquinas",
+        formato: "Denteado dos dois lados"
+      }, {
+        nome: "Correia Sincronizada - Dentes Desencontrados",
+        imagem: "/images/Correia sincronizada dentes desencontrados especial.jpeg",
+        aplicacao: "Equipamentos com sincronismo específico",
+        diferencial: "Engrenamento de dentes alternado para redução de ruído ou tranco"
+      }]
+    },
+    {
+      titulo: "Correias Planas e de Transporte",
+      icone: <Package className="h-6 w-6" strokeWidth={1.5} />,
+      descricao: "Soluções para transporte de materiais e aplicações industriais específicas.",
+      correias: [
+        {
+          nome: "Correias Laminadas para Elevador de Canecas (2 a 6 Lonas)",
+          imagem: "/images/Correia Plana.jpeg",
+          aplicacao: "Sistemas de elevação de grãos e minerais",
+          Características: "Com ou sem película, 2 a 6 lonas"
+        },
+        {
+          nome: "Correia Transportadora",
+          imagem: "/images/Correia transportadora.jpg",
+          aplicacao: "Movimentação de materiais (indústrias, mineração, etc.)",
+          caracteristicas: "Alta resistência e durabilidade"
+        },
+        {
+          nome: "Rolos de Correias",
+          imagem: "/images/Rolos correias:transportadora e borrachas.jpeg",
+          aplicacao: "Venda por metro ou montagem personalizada",
+          caracteristicas: "Correias transportadoras e borrachas industriais"
+        },
+        {
+          nome: "Correias Transportadoras de Borracha (2 e 3 Lonas)",
+          imagem: "/images/Correias transportadoras borrachas 2 e 3 lonas.jpeg",
+          aplicacao: "Transporte contínuo de materiais",
+          Reforço: "Alta resistência com múltiplas lonas"
+        }
+      ]
+    }
+  ];
 
   const getActiveCorreias = () => {
     if (!activeCategory) return [];
