@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Settings, Wrench, Box, Hammer, Square } from 'lucide-react';
+import { 
+  Settings, Wrench, Box, Hammer, Square, Circle, 
+  Package, CircleDot, Filter, Package2, PackageOpen, 
+  Database 
+} from 'lucide-react';
 
 const produtos = [{
   name: 'Abraçadeiras tipo rosca sem fim (Leve, Mangotinho ou Mangote)',
