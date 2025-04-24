@@ -183,25 +183,6 @@ const Mangueiras = () => {
       ]
     },
     {
-      titulo: "Revestimentos e Pisos Industriais",
-      icone: <Square className="h-6 w-6" strokeWidth={1.5} />,
-      descricao: "Soluções em revestimentos para proteção e segurança industrial.",
-      mangueiras: [
-        {
-          nome: "Lençol de Borracha com ou sem Lona",
-          imagem: "/images/Lençol borracha com ou sem lona.jpeg",
-          aplicacao: "Vedação, proteção e pisos industriais",
-          caracteristica: "Variações: Com reforço (lona) ou sem"
-        },
-        {
-          nome: "Piso de Borracha 50x50",
-          imagem: "/images/Piso borracha 50x50.jpeg",
-          aplicacao: "Revestimento de áreas industriais ou comerciais",
-          caracteristica: "Formato: Placas 50cm x 50cm – Antiderrapante"
-        }
-      ]
-    },
-    {
       titulo: "Mangueiras Hidráulicas e Alta Pressão",
       icone: <Wrench className="h-6 w-6" strokeWidth={1.5} />,
       descricao: "Reforçadas para condução de fluídos sob alta pressão.",

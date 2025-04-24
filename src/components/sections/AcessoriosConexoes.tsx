@@ -91,6 +91,16 @@ const produtos = [{
   descricao: 'Aplicação: Transporte vertical de grãos e produtos a granel\nMaterial: Plástico ou metálico',
   image: '/images/Canecas elevadores cereais.jpeg',
   Icon: Box
+}, {
+  name: 'Lençol de Borracha com ou sem Lona',
+  descricao: 'Aplicação: Vedação, proteção e pisos industriais\nVariações: Com reforço (lona) ou sem',
+  image: '/images/Lençol borracha com ou sem lona.jpeg',
+  Icon: Square
+}, {
+  name: 'Piso de Borracha 50x50',
+  descricao: 'Aplicação: Revestimento de áreas industriais ou comerciais\nFormato: Placas 50cm x 50cm – Antiderrapante',
+  image: '/images/Piso borracha 50x50.jpeg',
+  Icon: Square
 }];
 
 const AcessoriosConexoes = () => {
