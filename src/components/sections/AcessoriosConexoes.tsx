@@ -44,62 +44,62 @@ const produtos = [{
 }, {
   name: 'Polias Sincronizadas',
   descricao: 'Aplicação: Transmissão mecânica com correias sincronizadas\nUtilização: Indústria, manutenção e reposição',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Polias sincronizadas.jpg',
   Icon: Settings
 }, {
   name: 'Revestimento de Proteção para Mangueiras',
   descricao: 'Função: Proteger mangueiras contra abrasão, calor ou impactos\nUso: Externo em instalações industriais ou móveis',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Revestimentoproteçãomangueiras.jpg',
   Icon: PackageOpen
 }, {
   name: 'Tubo Gramianto para Descarga Quente (Piche/Asfalto)',
   descricao: 'Aplicação: Descarga de piche, betume, asfalto quente\nMaterial: Resistente a altas temperaturas',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Tubo gramianto uso passagem quente descarga pinche de asfalto.jpeg',
   Icon: Database
 }, {
   name: 'Tubo PU para Conexões Instantâneas (50 ou 100 metros)',
   descricao: 'Aplicação: Automação, pneumática\nRolos: 50m ou 100m',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Tudo pu. Para conexões instantânea rolos. 50 ou 100 metros.jpeg',
   Icon: Filter
 }, {
   name: 'Válvula Rosca fêmea ER 1 para Engate Rápido',
   descricao: 'Aplicação: Válvula de passagem para sistemas com engate rápido\nRosca: Rosca Fêmea ER 1 ',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Valvula Rosca 1 4 Npt Para Engate Rapido Mangueira 1 4 .jpg',
   Icon: Wrench
 }, {
   name: 'Válvulas Esferas Diversas / Tri-Partidas',
   descricao: 'Aplicação: Controle de fluxo em sistemas hidráulicos e pneumáticos\nTipos: Esfera padrão ou tri-partidas',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Válvulas esferas de diversos tipos ou tri partidas.jpeg',
   Icon: Settings
 }, {
   name: 'Espigões (Aço Laminado, Inox ou Latão)',
   descricao: 'Aplicação: Conexões para mangueiras e tubos\nMaterial: Aço inox, laminado ou latão',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Espigoes aço laminado ou aço inox ou latao.jpeg',
   Icon: Wrench
 }, {
   name: 'Grampos',
   descricao: 'Aplicação: Fixação de correias transportadoras\nMaterial: Aço zincado ou galvanizado',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/grampos.jpeg',
   Icon: Hammer
 }, {
   name: 'Parafusos para Caçambas',
   descricao: 'Aplicação: Fixação de caçambas em elevadores ou esteiras\nTipo: Cabeça abaulada ou especial para chapas metálicas',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Parafusos para caçambas.jpeg',
   Icon: Settings
 }, {
   name: 'Canecas para Elevadores de Cereais',
   descricao: 'Aplicação: Transporte vertical de grãos e produtos a granel\nMaterial: Plástico ou metálico',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Canecas elevadores cereais.jpeg',
   Icon: Box
 }, {
   name: 'Lençol de Borracha com ou sem Lona',
   descricao: 'Aplicação: Vedação, proteção e pisos industriais\nVariações: Com reforço (lona) ou sem',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Lençol borracha com ou sem lona.jpeg',
   Icon: Square
 }, {
   name: 'Piso de Borracha 50x50',
   descricao: 'Aplicação: Revestimento de áreas industriais ou comerciais\nFormato: Placas 50cm x 50cm – Antiderrapante',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Piso borracha 50x50.jpeg',
   Icon: Square
 }];
 

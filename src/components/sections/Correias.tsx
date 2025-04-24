@@ -15,8 +15,6 @@ interface CorreiaProps {
   uso?: string;
   vantagem?: string;
   marca?: string;
-  Reforço?: string;
-  Características?: string;
 }
 
 interface CategoriaProps {
@@ -122,12 +120,12 @@ const Correias = () => {
       imagem: "/images/Rolos correias:transportadora e borrachas.jpeg",
       aplicacao: "Venda por metro ou montagem personalizada",
       caracteristicas: "Correias transportadoras e borrachas industriais"
-    }, {
+    }{
       nome: "Correias Transportadoras de Borracha (2 e 3 Lonas)",
       imagem: "/images/Correias transportadoras borrachas 2 e 3 lonas.jpeg",
       aplicacao: "Transporte contínuo de materiais",
       Reforço: "Alta resistência com múltiplas lonas"
-    }]
+    },]
   }];
 
   const getActiveCorreias = () => {
@@ -137,8 +135,8 @@ const Correias = () => {
   };
 
   return <section id="correias" ref={sectionRef} className="bg-gray-50 py-0">
-    <div className="container-section">
-      <motion.div className="text-center max-w-3xl mx-auto mb-12" initial={{
+      <div className="container-section">
+        <motion.div className="text-center max-w-3xl mx-auto mb-12" initial={{
         opacity: 0,
         y: 20
       }} animate={isVisible ? {
@@ -150,15 +148,15 @@ const Correias = () => {
       }} transition={{
         duration: 0.7
       }}>
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Correias</h2>
-        <p className="text-lg text-gray-600">
-          Soluções completas em correias para diversas aplicações industriais
-        </p>
-      </motion.div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Correias</h2>
+          <p className="text-lg text-gray-600">
+            Soluções completas em correias para diversas aplicações industriais
+          </p>
+        </motion.div>
 
-      <div className="mb-12 overflow-x-auto">
-        <div className="flex space-x-2 min-w-max">
-          {categorias.map((categoria, index) => <motion.button key={index} className={cn("flex items-center px-4 py-3 rounded-lg border transition-all whitespace-nowrap", activeCategory === categoria.titulo ? "bg-sfg-red text-white border-sfg-red" : "bg-white text-gray-700 border-gray-200 hover:bg-gray-50")} onClick={() => setActiveCategory(categoria.titulo)} initial={{
+        <div className="mb-12 overflow-x-auto">
+          <div className="flex space-x-2 min-w-max">
+            {categorias.map((categoria, index) => <motion.button key={index} className={cn("flex items-center px-4 py-3 rounded-lg border transition-all whitespace-nowrap", activeCategory === categoria.titulo ? "bg-sfg-red text-white border-sfg-red" : "bg-white text-gray-700 border-gray-200 hover:bg-gray-50")} onClick={() => setActiveCategory(categoria.titulo)} initial={{
             opacity: 0,
             y: 10
           }} animate={isVisible ? {
@@ -171,28 +169,28 @@ const Correias = () => {
             duration: 0.5,
             delay: 0.1 * index
           }}>
-            <span className={cn("mr-2", activeCategory === categoria.titulo ? "text-white" : "text-sfg-red")}>
-              {categoria.icone}
-            </span>
-            <span className="font-medium">{categoria.titulo}</span>
-          </motion.button>)}
+                <span className={cn("mr-2", activeCategory === categoria.titulo ? "text-white" : "text-sfg-red")}>
+                  {categoria.icone}
+                </span>
+                <span className="font-medium">{categoria.titulo}</span>
+              </motion.button>)}
+          </div>
         </div>
-      </div>
 
-      {activeCategory && <motion.div className="bg-gray-50 p-4 rounded-lg mb-8" initial={{
+        {activeCategory && <motion.div className="bg-gray-50 p-4 rounded-lg mb-8" initial={{
         opacity: 0
       }} animate={{
         opacity: 1
       }} transition={{
         duration: 0.3
       }}>
-        <p className="text-gray-700">
-          {categorias.find(cat => cat.titulo === activeCategory)?.descricao}
-        </p>
-      </motion.div>}
+            <p className="text-gray-700">
+              {categorias.find(cat => cat.titulo === activeCategory)?.descricao}
+            </p>
+          </motion.div>}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {getActiveCorreias().map((correia, index) => <motion.div key={index} className="card hover:shadow-lg overflow-hidden" initial={{
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {getActiveCorreias().map((correia, index) => <motion.div key={index} className="card hover:shadow-lg overflow-hidden" initial={{
           opacity: 0,
           y: 20
         }} animate={isVisible ? {
@@ -205,18 +203,18 @@ const Correias = () => {
           duration: 0.5,
           delay: 0.1 * index
         }}>
-          <div className="h-64 overflow-hidden">
-            <img src={correia.imagem} alt={correia.nome} className="w-full h-full object-cover rounded-t-lg" />
-          </div>
-          <div className="p-5">
-            <h3 className="text-xl font-semibold mb-2">{correia.nome}</h3>
-            
-            <div className="mt-3 space-y-2">
-              <div className="bg-gray-50 p-2 rounded">
-                <span className="font-medium">Aplicação:</span> {correia.aplicacao}
+              <div className="h-64 overflow-hidden">
+                <img src={correia.imagem} alt={correia.nome} className="w-full h-full object-cover rounded-t-lg" />
               </div>
-              
-              {Object.entries(correia).map(([key, value]) => {
+              <div className="p-5">
+                <h3 className="text-xl font-semibold mb-2">{correia.nome}</h3>
+                
+                <div className="mt-3 space-y-2">
+                  <div className="bg-gray-50 p-2 rounded">
+                    <span className="font-medium">Aplicação:</span> {correia.aplicacao}
+                  </div>
+                  
+                  {Object.entries(correia).map(([key, value]) => {
                 if (key !== 'nome' && key !== 'imagem' && key !== 'aplicacao' && value) {
                   return <div key={key} className="bg-gray-50 p-2 rounded">
                           <span className="font-medium">{key.charAt(0).toUpperCase() + key.slice(1)}:</span> {value}
@@ -224,12 +222,12 @@ const Correias = () => {
                 }
                 return null;
               })}
-            </div>
-          </div>
-        </motion.div>)}
+                </div>
+              </div>
+            </motion.div>)}
+        </div>
       </div>
-    </div>
-  </section>;
+    </section>;
 };
 
 export default Correias;

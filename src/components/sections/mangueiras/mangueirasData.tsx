@@ -41,24 +41,24 @@ export const categorias: CategoriaProps[] = [
     mangueiras: [
       {
         nome: "Mangueiras Hidráulicas com Trama de Aço e Conexões",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueiras hidráulicas trama aço e conexões.jpeg",
         aplicacao: "Equipamentos hidráulicos"
       },
       {
         nome: "Mangueira Nylon para Óleos e Alta Pressão",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueira nylon passagem produtos óleos alta pressão.jpeg",
         aplicacao: "Produtos químicos e óleos",
         caracteristica: "Alta resistência"
       },
       {
         nome: "Mangueiras Hidráulicas Diversos Tipos",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueiras hidráulicas diversos tipos 1,2 tramas ou outros tipo.jpeg",
         aplicacao: "Linhas hidráulicas industriais",
         caracteristica: "Tipos: 1 trama, 2 tramas ou trançadas de aço"
       },
       {
         nome: "Conexões para Mangueiras Hidráulicas",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Conexões para mangueiras hidrailicas.jpeg",
         aplicacao: "Conexão entre linhas hidráulicas",
         caracteristica: "Compatibilidade: Vários diâmetros e pressões"
       }
@@ -71,12 +71,12 @@ export const categorias: CategoriaProps[] = [
     mangueiras: [
       {
         nome: "Mangueira Marton Petróleo",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueira marton petróleo usada passagem óleo diesel ou gasolina.jpeg",
         aplicacao: "Óleo diesel e gasolina"
       },
       {
         nome: "Mangueira Ar/Água Preta com Tarja Azul/Amarela",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueira ar_água preta tarja amarelo e preta tarja azul óleos e derivados.jpeg",
         aplicacao: "Também compatível com derivados de petróleo"
       }
     ]
@@ -88,13 +88,13 @@ export const categorias: CategoriaProps[] = [
     mangueiras: [
       {
         nome: "Mangueira Tipo KTS Transparente com Arame (Atóxica)",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueira tipo kts transparente arame atoxica uso vinhos,vinagre,leites,fabrica sorvetes.jpeg",
         aplicacao: "Vinhos, vinagre, leite, sorvetes",
         caracteristica: "Reforço: Espiral aramada"
       },
       {
         nome: "Mangueira PVC Sucção (Transparente Atóxica, Azul, Laranja, Verde)",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueira PVC sucao. Azul, tipo média, sucao laranja pesada,verde tipo leve ,transparente atoxica para vinhos,cervejeiros,vinagre ou leite.jpeg",
         aplicacao: "Bebidas e alimentos",
         caracteristica: "Tipos: Leve, média e pesada"
       }
@@ -107,28 +107,28 @@ export const categorias: CategoriaProps[] = [
     mangueiras: [
       {
         nome: "Mangueira Flat Chata",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueira Flat Chata.jpeg",
         aplicacao: "Irrigação e drenagem",
         caracteristica: "Características: Dobrável e leve"
       },
       {
         nome: "Mangueira PU com Arame Tipo KPUC (Pó ou Exaustores)",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueira pu com arame tipo kpuc pó ou exaustores.png",
         aplicacao: "Exaustão de pó e partículas"
       },
       {
         nome: "Mangueira Alumínio Tipo APA",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueira alumínio tipo APA usada exaustores e chaminés aquecedores gas.jpeg",
         aplicacao: "Exaustores e chaminés"
       },
       {
         nome: "Mangueira PVC Aspirador (Cinza ou Azul) e Tubo Silicone",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueira PVC tipo aspirador pó cinza ou azul ,tubo silicone diversos seguimentos.jpeg",
         aplicacao: "Aspiração e diversos segmentos"
       },
       {
         nome: "Mangueiras Lisa ou Espiraladas (PU - Conexões Instantâneas)",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueiras Lisa ou espiraladas uso linha arcomprimidos tipo conexões instantânea tubo pu.jpeg",
         aplicacao: "Linhas pneumáticas e automação industrial"
       }
     ]

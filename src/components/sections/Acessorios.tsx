@@ -1,3 +1,4 @@
+
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
@@ -29,15 +30,15 @@ const Acessorios = () => {
   }, []);
 
   const accessories = [
-    { name: 'Grampos', icon: <Paperclip className="h-8 w-8" />, image: '/images/grampos.jpeg' },
-    { name: 'Conexões Hidráulicas', icon: <Link className="h-8 w-8" />, image: '/images/Conexões para mangueiras hidrailicas.jpeg' },
-    { name: 'Conexões Instantâneas', icon: <Settings className="h-8 w-8" />, image: '/images/Conexões instantaneas.jpeg' },
-    { name: 'Abraçadeiras', icon: <Disc className="h-8 w-8" />, image: '/images/Abraçadeiras tipo rosca sem fim leve, tipo mangotinho ou mangote.jpeg' },
-    { name: 'Espigões', icon: <Plug className="h-8 w-8" />, image: '/images/Espigoes aço laminado ou aço inox ou latao.jpeg' },
-    { name: 'Parafusos', icon: <Wrench className="h-8 w-8" />, image: '/images/Parafusos para caçambas.jpeg' },
-    { name: 'Canecas para Elevadores', icon: <CupSoda className="h-8 w-8" />, image: '/images/Canecas elevadores cereais.jpeg' },
-    { name: 'Lençóis de Borracha', icon: <SquareStack className="h-8 w-8" />, image: '/images/Lençol borracha com ou sem lona.jpeg' },
-    { name: 'Pisos 50x50', icon: <Grid2X2 className="h-8 w-8" />, image: '/images/Piso borracha 50x50.jpeg' },
+    { name: 'Grampos', icon: <Paperclip className="h-8 w-8" /> },
+    { name: 'Conexões Hidráulicas', icon: <Link className="h-8 w-8" /> },
+    { name: 'Conexões Instantâneas', icon: <Settings className="h-8 w-8" /> },
+    { name: 'Abraçadeiras', icon: <Disc className="h-8 w-8" /> },
+    { name: 'Espigões', icon: <Plug className="h-8 w-8" /> },
+    { name: 'Parafusos', icon: <Wrench className="h-8 w-8" /> },
+    { name: 'Canecas para Elevadores', icon: <CupSoda className="h-8 w-8" /> },
+    { name: 'Lençóis de Borracha', icon: <SquareStack className="h-8 w-8" /> },
+    { name: 'Pisos 50x50', icon: <Grid2X2 className="h-8 w-8" /> },
   ];
 
   return (
