@@ -10,25 +10,25 @@ export const categorias: CategoriaProps[] = [
     mangueiras: [
       {
         nome: "Mangueira Ar/Água Lisa 300 psi",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueira ar_água Lisa 300 psi uso ar conprimido.png",
         aplicacao: "Ar comprimido",
         caracteristica: "Pressão: 300 psi"
       },
       {
         nome: "Mangueira Ar/Água Preta (Tarja Amarela/Azul)",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueira ar_água preta tarja amarelo e preta tarja azul óleos e derivados.jpeg",
         aplicacao: "Ar, água e óleos leves",
         caracteristica: "Cor: Preta com tarjas para identificação"
       },
       {
         nome: "Mangueira Lava Auto (1/2 ou 3/4 - 1000 ou 1500 psi)",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueira lava auto 1_2 ou 3_4 1000 ou. 1500 psi.jpeg",
         aplicacao: "Lavadoras de alta pressão",
         caracteristica: "Pressão: 1000 ou 1500 psi"
       },
       {
         nome: "Mangueiras de Ar e Água (500 a 700 psi)",
-        imagem: "/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png",
+        imagem: "/images/Mangueiras de ar e água de 500_700 psi  usadas em marteletes rompedores.jpeg",
         aplicacao: "Marteletes e rompedores",
         caracteristica: "Pressão: 500–700 psi"
       }

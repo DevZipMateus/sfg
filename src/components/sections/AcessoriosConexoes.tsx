@@ -9,37 +9,37 @@ import {
 const produtos = [{
   name: 'Abraçadeiras tipo rosca sem fim (Leve, Mangotinho ou Mangote)',
   descricao: 'Aplicação: Fixação de mangueiras em bocais ou conexões\nVariedades: Leve, para mangotinho ou mangote',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Abraçadeiras tipo rosca sem fim leve, tipo mangotinho ou mangote.jpeg',
   Icon: Wrench
 }, {
   name: 'Catalisador para Cola Vipal (30 min ou 60 min)',
   descricao: 'Aplicação: Acelerador para secagem de colas industriais\nTempo de secagem: 30 min ou 60 min',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Catalisador para cola vipal secagem 30 mim ou 60 min.jpeg',
   Icon: Circle
 }, {
   name: 'Conexões Instantâneas',
   descricao: 'Aplicação: Linhas pneumáticas, conexões rápidas para PU ou Nylon\nVantagem: Praticidade e vedação segura',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Conexões instantaneas.jpeg',
   Icon: Settings
 }, {
   name: 'Engate Rápido Ar Comprimido Tipo ER-1 Rosca Macho',
   descricao: 'Aplicação: Conexão/desconexão rápida em sistemas pneumáticos\nTipos: ER-1, Rosca Macho',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Engate rápido ar comprimido tipo ER 1 e pino macho.jpg',
   Icon: Package
 }, {
   name: 'Engates Rápidos Tipo Puck Lock',
   descricao: 'Aplicação: Sistemas hidráulicos ou pneumáticos com travamento seguro\nCaracterísticas: Alta vedação e trava rápida',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Engates rápidos tipo puck look.jpeg',
   Icon: CircleDot
 }, {
   name: 'Flexíveis Inox com Conexões Soldadas',
   descricao: 'Aplicação: Diversos segmentos industriais\nMaterial: Aço inox\nExtras: Já montados com conexões soldadas',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Flexível de diversos tamanhos inox já com as conexões soldadas vários seguimentos uso.jpeg',
   Icon: Filter
 }, {
   name: 'Mangotes Flexíveis Montados',
   descricao: 'Aplicação: Vapor, água quente, limpeza subterrânea, óleos\nCores: Branco, Laranja, Preto com tarja azul\nComprimento: Até 120 metros',
-  image: '/lovable-uploads/f111a145-a104-4307-82de-967555758e14.png',
+  image: '/images/Mangotes flexíveis montados vapor frigorífico branca água quente,laranja montada 120 mts limpeza galerias subterrâneas borracha preta tarja azul oleos.jpeg',
   Icon: Package2
 }, {
   name: 'Polias Sincronizadas',
