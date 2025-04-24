@@ -106,10 +106,10 @@ const Correias = () => {
     icone: <Package className="h-6 w-6" strokeWidth={1.5} />,
     descricao: "Soluções para transporte de materiais e aplicações industriais específicas.",
     correias: [{
-      nome: "Correia Plana",
+      nome: "Correias Laminadas para Elevador de Canecas (2 a 6 Lonas)",
       imagem: "/images/Correia Plana.jpeg",
-      aplicacao: "Máquinas industriais com roletes lisos",
-      uso: "Transmissão leve e sistemas antigos"
+      aplicacao: "Sistemas de elevação de grãos e minerais",
+      Características: "Com ou sem película, 2 a 6 lonas"
     }, {
       nome: "Correia Transportadora",
       imagem: "/images/Correia transportadora.jpg",
@@ -120,7 +120,12 @@ const Correias = () => {
       imagem: "/images/Rolos correias:transportadora e borrachas.jpeg",
       aplicacao: "Venda por metro ou montagem personalizada",
       caracteristicas: "Correias transportadoras e borrachas industriais"
-    }]
+    }{
+      nome: "Correias Transportadoras de Borracha (2 e 3 Lonas)",
+      imagem: "/images/Correias transportadoras borrachas 2 e 3 lonas.jpeg",
+      aplicacao: "Transporte contínuo de materiais",
+      Reforço: "Alta resistência com múltiplas lonas"
+    },]
   }];
 
   const getActiveCorreias = () => {
