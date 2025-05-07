@@ -130,7 +130,7 @@ const Correias = () => {
         {
           nome: "Correias Transportadoras de Borracha (2 e 3 Lonas)",
           imagem: "/images/Correias transportadoras borrachas 2 e 3 lonas.jpeg",
-          aplicacao: "Transporte contínuo de materiais",
+          aplicacao: "Transportes de pedras,britas,areias e calcarios",
           Reforço: "Alta resistência com múltiplas lonas"
         }
       ]
