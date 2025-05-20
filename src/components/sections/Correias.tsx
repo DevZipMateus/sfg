@@ -1,3 +1,4 @@
+
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
@@ -15,6 +16,8 @@ interface CorreiaProps {
   uso?: string;
   vantagem?: string;
   marca?: string;
+  reforco?: string;
+  passos?: string;
 }
 
 interface CategoriaProps {
@@ -102,6 +105,12 @@ const Correias = () => {
         imagem: "/images/Correia sincronizada dentes desencontrados especial.jpeg",
         aplicacao: "Equipamentos com sincronismo específico",
         diferencial: "Engrenamento de dentes alternado para redução de ruído ou tranco"
+      }, {
+        nome: "Correias Sincronizadas de diversos passos",
+        imagem: "/lovable-uploads/e3baf38a-7a4b-4d60-989f-2729608ccc4e.png",
+        aplicacao: "Aplicações de sincronismo preciso",
+        passos: "MXL-XL-L-H-XH-XXH-3M-8M-14M-T5-AT5-T10-AT10",
+        caracteristicas: "Disponíveis em borracha ou PU aço"
       }]
     },
     {
@@ -113,7 +122,7 @@ const Correias = () => {
           nome: "Correias Laminadas para Elevador de Canecas (2 a 6 Lonas)",
           imagem: "/images/Correia Plana.jpeg",
           aplicacao: "Sistemas de elevação de grãos e minerais",
-          Características: "Com ou sem película, 2 a 6 lonas"
+          caracteristicas: "Com ou sem película, 2 a 6 lonas"
         },
         {
           nome: "Correia Transportadora",
@@ -130,8 +139,8 @@ const Correias = () => {
         {
           nome: "Correias Transportadoras de Borracha (2 e 3 Lonas)",
           imagem: "/images/Correias transportadoras borrachas 2 e 3 lonas.jpeg",
-          aplicacao: "Transportes de pedras,britas,areias e calcarios",
-          Reforço: "Alta resistência com múltiplas lonas"
+          aplicacao: "Transporte contínuo de materiais",
+          reforco: "Alta resistência com múltiplas lonas"
         }
       ]
     }
