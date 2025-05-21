@@ -80,13 +80,13 @@ export const categorias: CategoriaProps[] = [
         aplicacao: "Também compatível com derivados de petróleo"
       },
       {
-        nome: "Mangueira para Abastecimento de Veículos I",
+        nome: "Mangueira para Abastecimento de Veículos montada com conexôes",
         imagem: "/images/mangueiraspreta1.jpeg",
         aplicacao: "Posto de combustível para abastecimento de veículos",
         caracteristica: "Compatível com combustíveis, álcool, gasolina e diesel"
       },
       {
-        nome: "Mangueira para Abastecimento de Veículos II",
+        nome: "Mangueira para Abastecimento de Veículos em rolo",
         imagem: "/images/mangueiraspreta2.jpeg",
         aplicacao: "Posto de combustível para abastecimento de veículos",
         caracteristica: "Alta resistência a derivados de petróleo"
