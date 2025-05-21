@@ -78,6 +78,18 @@ export const categorias: CategoriaProps[] = [
         nome: "Mangueira de borracha Tarja Azul para Petróleo  ",
         imagem: "/images/PETROLEO.png",
         aplicacao: "Também compatível com derivados de petróleo"
+      },
+      {
+        nome: "Mangueira para Abastecimento de Veículos I",
+        imagem: "/images/mangueiraspreta1.jpeg",
+        aplicacao: "Posto de combustível para abastecimento de veículos",
+        caracteristica: "Compatível com combustíveis, álcool, gasolina e diesel"
+      },
+      {
+        nome: "Mangueira para Abastecimento de Veículos II",
+        imagem: "/images/mangueiraspreta2.jpeg",
+        aplicacao: "Posto de combustível para abastecimento de veículos",
+        caracteristica: "Alta resistência a derivados de petróleo"
       }
     ]
   },
