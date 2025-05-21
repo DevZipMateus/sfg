@@ -125,9 +125,9 @@ const Correias = () => {
           caracteristicas: "Com ou sem película, 2 a 6 lonas"
         },
         {
-          nome: "Correia Transportadora",
+          nome: "Correia transportadora com talisca",
           imagem: "/images/Correia transportadora.jpg",
-          aplicacao: "Movimentação de materiais (indústrias, mineração, etc.)",
+          aplicacao: "Movimentação de sacarias, serragem  e caixas",
           caracteristicas: "Alta resistência e durabilidade"
         },
         {
