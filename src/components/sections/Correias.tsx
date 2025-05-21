@@ -142,6 +142,18 @@ const Correias = () => {
           aplicacao: "Transporte contínuo de materiais",
           reforco: "Alta resistência com múltiplas lonas"
         }
+        {
+          nome: "Correia Transportadora Plana de PVC Verde",
+          imagem: "/images/CorreiaTranspplana.jpeg",
+          aplicacao: "Ideal para o transporte de materiais leves e médios",
+          reforco: "Camadas de tecido sintético (Poliéster/Nylon)"
+        }
+        {
+          nome: "Correia Transportadora Plana de PVC verde claro",
+          imagem: "/images/CorreiaTranspplana2.jpeg",
+          aplicacao: "A superfície antiderrapante é usada para garantir aderência ao material transportado, principalmente em esteiras inclinadas ou quando os produtos são escorregadios ou leves.",
+          reforco: "Alta resistência à tração e desgaste"
+        }
       ]
     }
   ];
