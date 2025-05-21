@@ -70,13 +70,13 @@ export const categorias: CategoriaProps[] = [
     descricao: "Específicas para líquidos inflamáveis e lubrificantes.",
     mangueiras: [
       {
-        nome: "Mangueira Marton Petróleo",
+        nome: "Mangueira Marron Petróleo",
         imagem: "/images/Mangueira marton petróleo usada passagem óleo diesel ou gasolina.jpeg",
         aplicacao: "Óleo diesel e gasolina"
       },
       {
-        nome: "Mangueira Ar/Água Preta com Tarja Azul/Amarela",
-        imagem: "/images/Mangueira ar_água preta tarja amarelo e preta tarja azul óleos e derivados.jpeg",
+        nome: "Mangueira de borracha Tarja Azul para Petróleo  ",
+        imagem: "/images/PETROLEO.png",
         aplicacao: "Também compatível com derivados de petróleo"
       }
     ]
